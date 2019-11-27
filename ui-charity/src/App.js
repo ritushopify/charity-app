@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useCallback } from "react";
 import { Frame, Navigation } from "@shopify/polaris";
 import {
   ArrowLeftMinor,
@@ -6,43 +6,40 @@ import {
   OrdersMajorTwotone
 } from "@shopify/polaris-icons";
 
-import topBarMarkup from "./topBarMarkup";
+import TopBarMarkup from "./TopBarMarkup";
 
-const categorySelected = () => {
-  console.log("Selected category");
-};
+export default function App() {
+  const categorySelected = useCallback(value => {
+    console.log("Selected category");
+  }, []);
 
-const navigationMarkup = (
-  <Navigation location="/">
-    <Navigation.Section
-      items={[
-        {
-          label: "Back to Shopify",
-          icon: ArrowLeftMinor
-        }
-      ]}
-    />
-    <Navigation.Section
-      separator
-      title="Categories"
-      items={[
-        {
-          label: "Environment",
-          icon: HomeMajorMonotone,
-          selected: { categorySelected }
-        },
-        {
-          label: "Animals",
-          icon: OrdersMajorTwotone,
-          selected: { categorySelected }
-        }
-      ]}
-    />
-  </Navigation>
-);
-
-function App() {
-  return <Frame topBar={topBarMarkup()} navigation={navigationMarkup} />;
+  const navigationMarkup = (
+    <Navigation location="/">
+      <Navigation.Section
+        items={[
+          {
+            label: "Back to Shopify",
+            icon: ArrowLeftMinor
+          }
+        ]}
+      />
+      <Navigation.Section
+        separator
+        title="Categories"
+        items={[
+          {
+            label: "Environment",
+            icon: HomeMajorMonotone,
+            onClick: { categorySelected }
+          },
+          {
+            label: "Animals",
+            icon: OrdersMajorTwotone,
+            onClick: { categorySelected }
+          }
+        ]}
+      />
+    </Navigation>
+  );
+  return <Frame topBar={TopBarMarkup()} navigation={navigationMarkup} />;
 }
-
-export default App;
