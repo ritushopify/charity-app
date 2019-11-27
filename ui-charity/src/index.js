@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "@shopify/polaris/styles.css";
 import { AppProvider } from "@shopify/polaris";
-import enTranslations from "@shopify/polaris/locales/en.json";
 
 import App from "./App";
 // import * as serviceWorker from "./serviceWorker";

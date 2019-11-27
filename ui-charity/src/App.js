@@ -1,33 +1,16 @@
-import React, { useCallback } from "react";
+import React from "react";
+import { Frame, Navigation } from "@shopify/polaris";
 import {
   ArrowLeftMinor,
-  ConversationMinor,
   HomeMajorMonotone,
   OrdersMajorTwotone
 } from "@shopify/polaris-icons";
 
-// import "./App.css";
-import { TopBar, Frame, Navigation } from "@shopify/polaris";
-
-const userMenuMarkup = (
-  <TopBar.UserMenu name="Ritu" detail="Shopify, Inc." initials="RS" />
-);
+import topBarMarkup from "./topBarMarkup";
 
 const categorySelected = () => {
   console.log("Selected category");
 };
-
-// const handleNavigationToggle = useCallback(() => {
-//   console.log("toggle navigation visibility");
-// }, []);
-
-const topBarMarkup = (
-  <TopBar
-    showNavigationToggle
-    userMenu={userMenuMarkup}
-    //    onNavigationToggle={handleNavigationToggle}
-  />
-);
 
 const navigationMarkup = (
   <Navigation location="/">
@@ -46,22 +29,20 @@ const navigationMarkup = (
         {
           label: "Environment",
           icon: HomeMajorMonotone,
-          onClick: { categorySelected }
+          selected: { categorySelected }
         },
         {
           label: "Animals",
           icon: OrdersMajorTwotone,
-          onClick: { categorySelected }
+          selected: { categorySelected }
         }
       ]}
     />
   </Navigation>
 );
 
-class App extends React.Component {
-  render() {
-    return <Frame topBar={topBarMarkup} navigation={navigationMarkup}></Frame>;
-  }
+function App() {
+  return <Frame topBar={topBarMarkup()} navigation={navigationMarkup} />;
 }
 
 export default App;
