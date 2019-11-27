@@ -10,7 +10,7 @@ import TopBarMarkup from "./TopBarMarkup";
 
 export default function App() {
   const categorySelected = useCallback(value => {
-    console.log("Selected category");
+    console.log("Selected category " + value);
   }, []);
 
   const navigationMarkup = (
@@ -30,12 +30,12 @@ export default function App() {
           {
             label: "Environment",
             icon: HomeMajorMonotone,
-            onClick: { categorySelected }
+            onClick: categorySelected
           },
           {
             label: "Animals",
             icon: OrdersMajorTwotone,
-            onClick: { categorySelected }
+            onClick: categorySelected
           }
         ]}
       />
