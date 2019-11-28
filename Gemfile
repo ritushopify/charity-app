@@ -62,3 +62,6 @@ group :development do
   # A development utility to test GraphQL queries.
   gem 'graphiql-rails'
 end
+
+# The CORS spec allows web applications to make cross domain AJAX calls without using workarounds such as JSONP. 
+gem 'rack-cors'

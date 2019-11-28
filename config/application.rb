@@ -2,22 +2,22 @@ require_relative 'boot'
 
 require 'rails/all'
 
-# Require the gems listed in Gemfile, including any gems
-# you've limited to :test, :development, or :production.
-Bundler.require(*Rails.groups)
-
-# CORS config to allow ajax
-# config.middleware.insert_before 0, Rack::Cors do
-#   allow do
-#     origins '*'
-#     resource '*', headers: :any, methods: [:get, :post, :options]
-#   end
-# end
-
 module CharityApp
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
+
+    # Require the gems listed in Gemfile, including any gems
+    # you've limited to :test, :development, or :production.
+    Bundler.require(*Rails.groups)
+
+    # CORS config to allow ajax
+    config.middleware.insert_before 0, Rack::Cors do
+      allow do
+        origins '*'
+        resource '*', headers: :any, methods: [:get, :post, :options]
+      end
+    end
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
