@@ -11533,3 +11533,85 @@ Completed 200 OK in 18ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 1025
 
 
 [StatsD] CharityApp.request_time:39|d|#controller:graphql,action:execute,request_method:GET,request_format:text/html,response_code:200,response_type:2xx,environment:development
+Started GET "/" for 192.168.64.86 at 2019-11-28 11:34:38 -0500
+  [1m[35m (1.7ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/ritu.sikka/.gem/ruby/2.6.3/gems/railties-6.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ritu.sikka/.gem/ruby/2.6.3/gems/railties-6.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 8.0ms | Allocations: 317)
+Completed 200 OK in 28ms (Views: 17.3ms | ActiveRecord: 0.0ms | Allocations: 1816)
+
+
+[StatsD] CharityApp.request_time:365|d|#controller:rails/welcome,action:index,request_method:GET,request_format:text/html,response_code:200,response_type:2xx,environment:development
+[StatsD] CharityApp.request_time:0|d|#response_code:304,response_type:3xx,environment:development
+Started GET "/graphiql" for 192.168.64.86 at 2019-11-28 11:34:45 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/graphiql"):
+  
+actionpack (6.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+shopify_metrics (1.2.2) lib/shopify_metrics/middlewares/raindrops_middleware.rb:21:in `call'
+shopify_metrics (1.2.2) lib/shopify_metrics/middlewares/request_metrics_middleware.rb:47:in `call'
+webpacker (4.2.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.0) lib/puma/configuration.rb:228:in `call'
+puma (4.3.0) lib/puma/server.rb:667:in `handle_request'
+puma (4.3.0) lib/puma/server.rb:470:in `process_client'
+puma (4.3.0) lib/puma/server.rb:328:in `block in run'
+puma (4.3.0) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+[StatsD] CharityApp.request_time:133|d|#response_code:404,response_type:4xx,environment:development
+Started GET "/graphiql" for 192.168.64.86 at 2019-11-28 11:37:30 -0500
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/graphql#execute"}
+  Rendering /Users/ritu.sikka/.gem/ruby/2.6.3/gems/graphiql-rails-1.7.0/app/views/graphiql/rails/editors/show.html.erb
+  Rendered /Users/ritu.sikka/.gem/ruby/2.6.3/gems/graphiql-rails-1.7.0/app/views/graphiql/rails/editors/show.html.erb (Duration: 55.4ms | Allocations: 6929)
+Completed 200 OK in 63ms (Views: 57.9ms | ActiveRecord: 0.0ms | Allocations: 8951)
+
+
+[StatsD] CharityApp.request_time:280|d|#controller:graphiql/rails/editors,action:show,request_method:GET,request_format:text/html,response_code:200,response_type:2xx,environment:development
+[StatsD] CharityApp.request_time:6|d|#response_code:200,response_type:2xx,environment:development
+[StatsD] CharityApp.request_time:25|d|#response_code:200,response_type:2xx,environment:development
+Started POST "/graphql" for 192.168.64.86 at 2019-11-28 11:37:30 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ", "graphql"=>{"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "}}
+[StatsD] CharityApp.request_time:0|d|#response_code:200,response_type:2xx,environment:development
+Completed 200 OK in 57ms (Views: 6.1ms | ActiveRecord: 0.0ms | Allocations: 35238)
+
+
+[StatsD] CharityApp.request_time:74|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+[StatsD] CharityApp.request_content_length:1728|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+Started POST "/graphql" for 192.168.64.86 at 2019-11-28 11:37:39 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"query"=>"{\n  charitiesForCategory (catId: 92){\n    name\n    categoryId\n  }\n    \n  \n  \n  allCharities {\n    name\n    categoryId\n  }\n  \n  categories {\n    categoryId\n    description\n  }\n}\n  \n", "variables"=>nil, "graphql"=>{"query"=>"{\n  charitiesForCategory (catId: 92){\n    name\n    categoryId\n  }\n    \n  \n  \n  allCharities {\n    name\n    categoryId\n  }\n  \n  categories {\n    categoryId\n    description\n  }\n}\n  \n", "variables"=>nil}}
+  [1m[36mCharity Load (3.1ms)[0m  [1m[34mSELECT `charities`.* FROM `charities` WHERE `charities`.`category_id` = 92[0m
+  ↳ app/controllers/graphql_controller.rb:15:in `execute'
+  [1m[36mCharity Load (0.8ms)[0m  [1m[34mSELECT `charities`.* FROM `charities`[0m
+  ↳ app/controllers/graphql_controller.rb:15:in `execute'
+  [1m[36mCategory Load (1.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  ↳ app/controllers/graphql_controller.rb:15:in `execute'
+Completed 200 OK in 47ms (Views: 0.5ms | ActiveRecord: 10.9ms | Allocations: 16165)
+
+
+[StatsD] CharityApp.request_time:53|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+[StatsD] CharityApp.request_content_length:228|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development

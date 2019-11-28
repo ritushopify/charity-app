@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.3'
-gem 'rack-cors'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.1'
@@ -60,6 +59,6 @@ gem 'shopify-cloud', source: 'https://packages.shopify.io/shopify/gems'
 gem 'graphql'
 
 group :development do
-   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  # A development utility to test GraphQL queries.
   gem 'graphiql-rails'
- end
+end

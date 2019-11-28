@@ -7,12 +7,12 @@ require 'rails/all'
 Bundler.require(*Rails.groups)
 
 # CORS config to allow ajax
-config.middleware.insert_before 0, Rack::Cors do
-  allow do
-    origins '*'
-    resource '*', headers: :any, methods: [:get, :post, :options]
-  end
-end
+# config.middleware.insert_before 0, Rack::Cors do
+#   allow do
+#     origins '*'
+#     resource '*', headers: :any, methods: [:get, :post, :options]
+#   end
+# end
 
 module CharityApp
   class Application < Rails::Application
