@@ -12948,3 +12948,26 @@ Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 1.2ms | Allocations: 2772)
 
 [StatsD] CharityApp.request_time:68|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
 [StatsD] CharityApp.request_content_length:124|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+[StatsD] CharityApp.request_time:0|d|#response_code:200,response_type:2xx,environment:development
+Started POST "/graphql" for 192.168.64.86 at 2019-11-29 11:23:49 -0500
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  categories {\n    categoryId\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  categories {\n    categoryId\n    description\n    __typename\n  }\n}\n"}}
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  ↳ app/controllers/graphql_controller.rb:15:in `execute'
+Completed 200 OK in 7ms (Views: 0.8ms | ActiveRecord: 1.0ms | Allocations: 2770)
+
+
+[StatsD] CharityApp.request_time:38|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+[StatsD] CharityApp.request_content_length:124|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+Started POST "/graphql" for 192.168.64.86 at 2019-11-29 11:51:09 -0500
+  [1m[35m (3.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  categories {\n    categoryId\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  categories {\n    categoryId\n    description\n    __typename\n  }\n}\n"}}
+  [1m[36mCategory Load (0.9ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  ↳ app/controllers/graphql_controller.rb:15:in `execute'
+Completed 200 OK in 7ms (Views: 0.8ms | ActiveRecord: 0.9ms | Allocations: 2772)
+
+
+[StatsD] CharityApp.request_time:44|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+[StatsD] CharityApp.request_content_length:124|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
