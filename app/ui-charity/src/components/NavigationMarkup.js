@@ -29,6 +29,7 @@ export default function NavigationMarkup() {
         title="Categories"
         items={[
           {
+            url: "/Environment",
             label: "Environment",
             icon: HomeMajorMonotone,
             onClick: categorySelected

@@ -9,7 +9,6 @@ import {
   ResourceList,
   ResourceItem
 } from "@shopify/polaris";
-import { replace } from "@shopify/app-bridge/actions/Navigation/History";
 
 export default function PageMarkup() {
   const resourceName = {
