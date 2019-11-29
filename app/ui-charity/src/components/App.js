@@ -1,4 +1,4 @@
-import React, { useCallback } from "react";
+import React from "react";
 import { Frame } from "@shopify/polaris";
 
 import TopBarMarkup from "./TopBarMarkup";
