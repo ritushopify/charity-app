@@ -32,7 +32,7 @@ export default function StartPage() {
             <center>
               <DisplayText size="large">
                 Begin by exploring the available charities and card designs.
-                Then enter your donation amount to send your donation.
+                Then enter a donation amount to send your donation.
               </DisplayText>
               {/* <Button onClick={startClicked}>START</Button> */}
               <Button accessiblityLabel="Start" url="/main" size="large">

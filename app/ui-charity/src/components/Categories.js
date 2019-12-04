@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Query } from "react-apollo";
 import gql from "graphql-tag";
+import DisplayCategories from "./DisplayCategories";
 
 const CAT_QUERY = gql`
   query {
@@ -18,17 +19,7 @@ class Categories extends Component {
         {({ loading, error, data }) => {
           if (loading) return <div>Fetching..</div>;
           if (error) return <div>Error!</div>;
-          return (
-            <div>
-              {data.categories.map(cat => {
-                return (
-                  <div key={cat.categoryId}>
-                    <p> {cat.description} </p>
-                  </div>
-                );
-              })}
-            </div>
-          );
+          return <DisplayCategories categories={data.categories} />;
         }}
       </Query>
     );
