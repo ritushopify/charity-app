@@ -1,7 +1,7 @@
 import React from "react";
 import { Page } from "@shopify/polaris";
-import StartPageMarkup from "./StartPage/StartPageMarkup";
+import StartPage from "./Starting/StartPage";
 
 export default function App() {
-  return <Page>{StartPageMarkup()}</Page>;
+  return <Page>{StartPage()}</Page>;
 }

@@ -13568,3 +13568,5 @@ Completed 200 OK in 46ms (Views: 34.5ms | ActiveRecord: 0.0ms | Allocations: 343
 
 [StatsD] CharityApp.request_time:322|d|#controller:rails/welcome,action:index,request_method:GET,request_format:text/html,response_code:200,response_type:2xx,environment:development
 [StatsD] CharityApp.request_time:0|d|#response_code:304,response_type:3xx,environment:development
+[StatsD] CharityApp.request_time:2|d|#response_code:200,response_type:2xx,environment:development
+[StatsD] CharityApp.request_time:2|d|#response_code:200,response_type:2xx,environment:development

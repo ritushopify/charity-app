@@ -8,7 +8,7 @@ import { ApolloProvider } from "react-apollo";
 import { ApolloClient } from "apollo-client";
 import { createHttpLink } from "apollo-link-http";
 import { InMemoryCache } from "apollo-cache-inmemory";
-import { BrowserRouter } from "react-router-dom";
+
 import App from "./components/App";
 
 const theme = {
@@ -35,23 +35,21 @@ function WrappedApp() {
   });
 
   return (
-    <BrowserRouter>
-      <ApolloProvider client={client}>
-        <AppProvider
-          theme={theme}
-          i18n={{
-            enTranslations,
-            Polaris: {
-              Avatar: { label: "Avatar" },
-              Frame: { skipToContent: "Skip to content" },
-              TopBar: { toggleMenuLabel: "Toggle menu" }
-            }
-          }}
-        >
-          <App />
-        </AppProvider>
-      </ApolloProvider>
-    </BrowserRouter>
+    <ApolloProvider client={client}>
+      <AppProvider
+        theme={theme}
+        i18n={{
+          enTranslations,
+          Polaris: {
+            Avatar: { label: "Avatar" },
+            Frame: { skipToContent: "Skip to content" },
+            TopBar: { toggleMenuLabel: "Toggle menu" }
+          }
+        }}
+      >
+        <App />
+      </AppProvider>
+    </ApolloProvider>
   );
 }
 
