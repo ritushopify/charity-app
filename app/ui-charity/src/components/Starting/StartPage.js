@@ -13,33 +13,35 @@ export default function StartPage() {
   //   console.log("Start Clicked");
   // }, []);
   return (
-    <Layout>
-      <center>
-        <img src={titleImg} alt="A Different Kind of Gift Giving" />
-      </center>
-
+    <Page>
       <Layout>
-        <Layout.Section>
-          <Layout.Section>{IntroBlurb()}</Layout.Section>
-          <Layout.Section>{GiveGiftBlurb()}</Layout.Section>
-        </Layout.Section>
-        <Layout.Section secondary>{ImageSection()}</Layout.Section>
-      </Layout>
+        <center>
+          <img src={titleImg} alt="A Different Kind of Gift Giving" />
+        </center>
 
-      <Layout.Section>
-        <Badge status="attention">
-          <center>
-            <DisplayText size="large">
-              Begin by exploring the available charities and card designs. Then
-              enter your donation amount to send your donation.
-            </DisplayText>
-            {/* <Button onClick={startClicked}>START</Button> */}
-            <Button accessiblityLabel="Start" url="/mainPage" size="large">
-              Start
-            </Button>
-          </center>
-        </Badge>
-      </Layout.Section>
-    </Layout>
+        <Layout>
+          <Layout.Section>
+            <Layout.Section>{IntroBlurb()}</Layout.Section>
+            <Layout.Section>{GiveGiftBlurb()}</Layout.Section>
+          </Layout.Section>
+          <Layout.Section secondary>{ImageSection()}</Layout.Section>
+        </Layout>
+
+        <Layout.Section>
+          <Badge status="attention">
+            <center>
+              <DisplayText size="large">
+                Begin by exploring the available charities and card designs.
+                Then enter your donation amount to send your donation.
+              </DisplayText>
+              {/* <Button onClick={startClicked}>START</Button> */}
+              <Button accessiblityLabel="Start" url="/main" size="large">
+                Start
+              </Button>
+            </center>
+          </Badge>
+        </Layout.Section>
+      </Layout>
+    </Page>
   );
 }
