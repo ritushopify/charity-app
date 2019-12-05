@@ -1,21 +1,16 @@
-import React, { useCallback } from "react";
+import React from "react";
 import { Navigation } from "@shopify/polaris";
 import {
-  ArrowLeftMinor,
-  HomeMajorMonotone,
-  OrdersMajorTwotone
+  ArrowLeftMinor
+  //  HomeMajorMonotone,
+  // OrdersMajorTwotone
 } from "@shopify/polaris-icons";
 
-import Categories from "./Categories";
+import CategoriesSection from "./CategoriesSection";
 
 export default function NavigationMarkup() {
-  const categorySelected = useCallback(value => {
-    console.log("Selected category " + value);
-  }, []);
-
   return (
     <Navigation location="/">
-      <Categories />
       <Navigation.Section
         items={[
           {
@@ -24,23 +19,7 @@ export default function NavigationMarkup() {
           }
         ]}
       />
-      <Navigation.Section
-        separator
-        title="Categories"
-        items={[
-          {
-            url: "/Environment",
-            label: "Environment",
-            icon: HomeMajorMonotone,
-            onClick: categorySelected
-          },
-          {
-            label: "Animals",
-            icon: OrdersMajorTwotone,
-            onClick: categorySelected
-          }
-        ]}
-      />
+      <CategoriesSection />
     </Navigation>
   );
 }

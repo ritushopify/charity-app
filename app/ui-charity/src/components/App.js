@@ -1,7 +1,6 @@
 import React from "react";
 import StartPage from "./Starting/StartPage";
 import MainPage from "./MainPage";
-import { Page } from "@shopify/polaris";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 export default function App() {
