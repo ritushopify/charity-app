@@ -1,9 +1,9 @@
 import React from "react";
-import StartPage from "./Starting/StartPage";
-import MainPage from "./MainPage";
+import StartPage from "../components/Starting/StartPage";
+import MainPage from "../components/MainPage";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
-export default function App() {
+export default function AppRoutes() {
   return (
     <BrowserRouter>
       <Switch>

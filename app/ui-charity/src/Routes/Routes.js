@@ -1,11 +1,11 @@
 import React from "react";
 import { Switch, Route } from "react-router";
-import Environment from "./components/Environment";
+import Environment from "../components/Environment";
 
 function Routes() {
   return (
     <Switch>
-      <Route exact path="/environment" render={() => <Environment />} />
+      <Route path="/environment" render={() => <Environment />} />
     </Switch>
   );
 }
