@@ -11,6 +11,10 @@ import { InMemoryCache } from "apollo-cache-inmemory";
 
 import App from "./components/App";
 
+const graphQlLink = createHttpLink({
+  uri: "https://charity-app.myshopify.io/graphql"
+});
+
 const theme = {
   colors: {
     topBar: {
@@ -18,19 +22,17 @@ const theme = {
     }
   },
   logo: {
-    width: 124,
-    topBarSource: "shopify_logo_darkbg.svg",
-    accessibilityLabel: "Shopify"
+    width: 40,
+    topBarSource:
+      "https://seeklogo.com/images/S/shopify-logo-1C711BCDE4-seeklogo.com.png",
+    contextualSaveBarSource: "./assets/freeLogo.svg",
+    accessibilityLabel: "Earth Logo"
   }
 };
 
-const link = createHttpLink({
-  uri: "https://charity-app.myshopify.io/graphql"
-});
-
 function WrappedApp() {
   const client = new ApolloClient({
-    link: link,
+    link: graphQlLink,
     cache: new InMemoryCache()
   });
 

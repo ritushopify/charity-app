@@ -23,13 +23,12 @@ export default function CategoriesSection() {
   }
   console.log("data is" + data.categories);
   const items = data.categories.map(category => {
-    const attrs = {
+    const attributes = {
       url: category.categoryId,
       label: category.description,
       icon: HomeMajorMonotone
     };
-
-    return attrs;
+    return attributes;
   });
   return <Navigation.Section separator title="Categories" items={items} />;
 }
