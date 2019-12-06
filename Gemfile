@@ -65,3 +65,6 @@ end
 
 # The CORS spec allows web applications to make cross domain AJAX calls without using workarounds such as JSONP. 
 gem 'rack-cors'
+
+# For HTTP requests
+gem 'rest-client'

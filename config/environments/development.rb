@@ -62,8 +62,12 @@ Rails.application.configure do
 end
 Rails.application.configure do
   config.hosts << "charity-app.myshopify.io"
+  config.user_key="767217d273a5d0194a2a611a378fc990"
 end
 
 Rails.application.configure do
   config.web_console.whitelisted_ips = "192.168.64.0/24"
 end
+
+
+

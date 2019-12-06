@@ -13570,3 +13570,1355 @@ Completed 200 OK in 46ms (Views: 34.5ms | ActiveRecord: 0.0ms | Allocations: 343
 [StatsD] CharityApp.request_time:0|d|#response_code:304,response_type:3xx,environment:development
 [StatsD] CharityApp.request_time:2|d|#response_code:200,response_type:2xx,environment:development
 [StatsD] CharityApp.request_time:2|d|#response_code:200,response_type:2xx,environment:development
+  [1m[35m (1.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (1.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/" for 192.168.64.86 at 2019-12-06 14:15:15 -0500
+  [1m[35m (1.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/ritu.sikka/.gem/ruby/2.6.3/gems/railties-6.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ritu.sikka/.gem/ruby/2.6.3/gems/railties-6.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 6.6ms | Allocations: 1441)
+Completed 200 OK in 24ms (Views: 14.9ms | ActiveRecord: 0.0ms | Allocations: 3674)
+
+
+[StatsD] CharityApp.request_time:263|d|#controller:rails/welcome,action:index,request_method:GET,request_format:text/html,response_code:304,response_type:3xx,environment:development
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (2.8ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/" for 192.168.64.86 at 2019-12-06 14:22:38 -0500
+  [1m[35m (1.8ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/ritu.sikka/.gem/ruby/2.6.3/gems/railties-6.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ritu.sikka/.gem/ruby/2.6.3/gems/railties-6.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.2ms | Allocations: 317)
+Completed 200 OK in 25ms (Views: 15.1ms | ActiveRecord: 0.0ms | Allocations: 1817)
+
+
+[StatsD] CharityApp.request_time:253|d|#controller:rails/welcome,action:index,request_method:GET,request_format:text/html,response_code:304,response_type:3xx,environment:development
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (1.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (1.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mCharity Load (0.7ms)[0m  [1m[34mSELECT `charities`.* FROM `charities`[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (0.6ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 9[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (0.5ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 10[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (0.4ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 11[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (0.5ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 12[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (0.5ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 13[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mCharity Load (0.6ms)[0m  [1m[34mSELECT `charities`.* FROM `charities`[0m
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mCharity Load (0.4ms)[0m  [1m[34mSELECT `charities`.* FROM `charities`[0m
+  [1m[36mCategory Load (0.9ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.6ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 91[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.8ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 92[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.8ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 93[0m
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.7ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 94[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.6ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 95[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.5ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 96[0m
+  [1m[35m (3.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.7ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 97[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.7ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 98[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.7ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 99[0m
+  [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.6ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 100[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mCharity Load (0.8ms)[0m  [1m[34mSELECT `charities`.* FROM `charities`[0m
+  [1m[36mCategory Load (0.8ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.8ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('C', 'Environmental Quality, Protection and Beautification', '2019-12-06 20:24:27.754733', '2019-12-06 20:24:27.754733')[0m
+  [1m[35m (3.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.8ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('D', 'Animal-Related', '2019-12-06 20:24:27.764077', '2019-12-06 20:24:27.764077')[0m
+  [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.8ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('F', 'Mental Health, Crisis Intervention', '2019-12-06 20:24:27.773082', '2019-12-06 20:24:27.773082')[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.5ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('H', 'Medical Research', '2019-12-06 20:24:27.780422', '2019-12-06 20:24:27.780422')[0m
+  [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.5ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('K', 'Food, Agriculture and Nutrition', '2019-12-06 20:24:27.787847', '2019-12-06 20:24:27.787847')[0m
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.6ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('L', 'Housing, Shelter', '2019-12-06 20:24:27.796322', '2019-12-06 20:24:27.796322')[0m
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.6ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('O', 'Youth Development', '2019-12-06 20:24:27.804451', '2019-12-06 20:24:27.804451')[0m
+  [1m[35m (3.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.5ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('Q', 'International, Foreign Affairs and National Security', '2019-12-06 20:24:27.813239', '2019-12-06 20:24:27.813239')[0m
+  [1m[35m (19.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.4ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('U', 'Science and Technology Research Institutes, Services', '2019-12-06 20:24:27.837117', '2019-12-06 20:24:27.837117')[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.4ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('X', 'Religion-Related, Spiritual Development', '2019-12-06 20:24:27.843634', '2019-12-06 20:24:27.843634')[0m
+  [1m[35m (4.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mCharity Load (0.8ms)[0m  [1m[34mSELECT `charities`.* FROM `charities`[0m
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.7ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 101[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.9ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 102[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.6ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 103[0m
+  [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.8ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 104[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.8ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 105[0m
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.8ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 106[0m
+  [1m[35m (3.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.6ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 107[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.6ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 108[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.7ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 109[0m
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.6ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 110[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (1.2ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('C', 'Environmental Quality, Protection and Beautification', '2019-12-06 20:26:51.403686', '2019-12-06 20:26:51.403686')[0m
+  [1m[35m (3.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.6ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('D', 'Animal-Related', '2019-12-06 20:26:51.412937', '2019-12-06 20:26:51.412937')[0m
+  [1m[35m (3.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.7ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('F', 'Mental Health, Crisis Intervention', '2019-12-06 20:26:51.420606', '2019-12-06 20:26:51.420606')[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.5ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('H', 'Medical Research', '2019-12-06 20:26:51.428869', '2019-12-06 20:26:51.428869')[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.7ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('K', 'Food, Agriculture and Nutrition', '2019-12-06 20:26:51.434748', '2019-12-06 20:26:51.434748')[0m
+  [1m[35m (3.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.7ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('L', 'Housing, Shelter', '2019-12-06 20:26:51.442952', '2019-12-06 20:26:51.442952')[0m
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.7ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('O', 'Youth Development', '2019-12-06 20:26:51.450711', '2019-12-06 20:26:51.450711')[0m
+  [1m[35m (3.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.6ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('Q', 'International, Foreign Affairs and National Security', '2019-12-06 20:26:51.459494', '2019-12-06 20:26:51.459494')[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.8ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('U', 'Science and Technology Research Institutes, Services', '2019-12-06 20:26:51.467665', '2019-12-06 20:26:51.467665')[0m
+  [1m[35m (3.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.6ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('X', 'Religion-Related, Spiritual Development', '2019-12-06 20:26:51.476054', '2019-12-06 20:26:51.476054')[0m
+  [1m[35m (3.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mCharity Load (0.6ms)[0m  [1m[34mSELECT `charities`.* FROM `charities`[0m
+  [1m[36mCategory Load (0.8ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.6ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 111[0m
+  [1m[35m (3.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (1.5ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 112[0m
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.6ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 113[0m
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.9ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 114[0m
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.7ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 115[0m
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (1.0ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 116[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.6ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 117[0m
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.9ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 118[0m
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.8ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 119[0m
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.8ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 120[0m
+  [1m[35m (20.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.7ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('C', 'Environmental Quality, Protection and Beautification', '2019-12-06 20:35:10.384581', '2019-12-06 20:35:10.384581')[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.9ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('D', 'Animal-Related', '2019-12-06 20:35:10.393106', '2019-12-06 20:35:10.393106')[0m
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.7ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('F', 'Mental Health, Crisis Intervention', '2019-12-06 20:35:10.401821', '2019-12-06 20:35:10.401821')[0m
+  [1m[35m (3.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.8ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('H', 'Medical Research', '2019-12-06 20:35:10.410011', '2019-12-06 20:35:10.410011')[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.6ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('K', 'Food, Agriculture and Nutrition', '2019-12-06 20:35:10.418314', '2019-12-06 20:35:10.418314')[0m
+  [1m[35m (3.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.6ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('L', 'Housing, Shelter', '2019-12-06 20:35:10.427138', '2019-12-06 20:35:10.427138')[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.8ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('O', 'Youth Development', '2019-12-06 20:35:10.434916', '2019-12-06 20:35:10.434916')[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.7ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('Q', 'International, Foreign Affairs and National Security', '2019-12-06 20:35:10.442620', '2019-12-06 20:35:10.442620')[0m
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.7ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('U', 'Science and Technology Research Institutes, Services', '2019-12-06 20:35:10.451826', '2019-12-06 20:35:10.451826')[0m
+  [1m[35m (3.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.6ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('X', 'Religion-Related, Spiritual Development', '2019-12-06 20:35:10.460243', '2019-12-06 20:35:10.460243')[0m
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT `charities`.* FROM `charities`[0m
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.5ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 121[0m
+  [1m[35m (3.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.5ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 122[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.5ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 123[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.5ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 124[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.4ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 125[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.5ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 126[0m
+  [1m[35m (3.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.4ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 127[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.5ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 128[0m
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.5ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 129[0m
+  [1m[35m (18.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.7ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 130[0m
+  [1m[35m (3.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.6ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('C', 'Environmental Quality, Protection and Beautification', '2019-12-06 20:37:14.279574', '2019-12-06 20:37:14.279574')[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.5ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('D', 'Animal-Related', '2019-12-06 20:37:14.285793', '2019-12-06 20:37:14.285793')[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.4ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('F', 'Mental Health, Crisis Intervention', '2019-12-06 20:37:14.291662', '2019-12-06 20:37:14.291662')[0m
+  [1m[35m (11.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.5ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('H', 'Medical Research', '2019-12-06 20:37:14.306934', '2019-12-06 20:37:14.306934')[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.5ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('K', 'Food, Agriculture and Nutrition', '2019-12-06 20:37:14.313192', '2019-12-06 20:37:14.313192')[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.8ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('L', 'Housing, Shelter', '2019-12-06 20:37:14.319566', '2019-12-06 20:37:14.319566')[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.4ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('O', 'Youth Development', '2019-12-06 20:37:14.326553', '2019-12-06 20:37:14.326553')[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (102.6ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('Q', 'International, Foreign Affairs and National Security', '2019-12-06 20:37:14.331951', '2019-12-06 20:37:14.331951')[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.5ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('U', 'Science and Technology Research Institutes, Services', '2019-12-06 20:37:14.440207', '2019-12-06 20:37:14.440207')[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.7ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('X', 'Religion-Related, Spiritual Development', '2019-12-06 20:37:14.446379', '2019-12-06 20:37:14.446379')[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (1.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mCharity Load (0.8ms)[0m  [1m[34mSELECT `charities`.* FROM `charities`[0m
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.6ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 131[0m
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (1.3ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 132[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.5ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 133[0m
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.6ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 134[0m
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.5ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 135[0m
+  [1m[35m (3.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.6ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 136[0m
+  [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.7ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 137[0m
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (1.1ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 138[0m
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (1.1ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 139[0m
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.6ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 140[0m
+  [1m[35m (3.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.5ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('C', 'Environmental Quality, Protection and Beautification', '2019-12-06 20:46:00.117962', '2019-12-06 20:46:00.117962')[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.5ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('D', 'Animal-Related', '2019-12-06 20:46:00.124458', '2019-12-06 20:46:00.124458')[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.8ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('F', 'Mental Health, Crisis Intervention', '2019-12-06 20:46:00.130636', '2019-12-06 20:46:00.130636')[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.6ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('H', 'Medical Research', '2019-12-06 20:46:00.137428', '2019-12-06 20:46:00.137428')[0m
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.6ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('K', 'Food, Agriculture and Nutrition', '2019-12-06 20:46:00.145112', '2019-12-06 20:46:00.145112')[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.7ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('L', 'Housing, Shelter', '2019-12-06 20:46:00.151837', '2019-12-06 20:46:00.151837')[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (1.1ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('O', 'Youth Development', '2019-12-06 20:46:00.158537', '2019-12-06 20:46:00.158537')[0m
+  [1m[35m (3.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.6ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('Q', 'International, Foreign Affairs and National Security', '2019-12-06 20:46:00.182583', '2019-12-06 20:46:00.182583')[0m
+  [1m[35m (3.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (1.4ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('U', 'Science and Technology Research Institutes, Services', '2019-12-06 20:46:00.189539', '2019-12-06 20:46:00.189539')[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.7ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('X', 'Religion-Related, Spiritual Development', '2019-12-06 20:46:00.196529', '2019-12-06 20:46:00.196529')[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (1.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mCharity Load (0.8ms)[0m  [1m[34mSELECT `charities`.* FROM `charities`[0m
+  [1m[36mCategory Load (0.8ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.5ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 141[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.9ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 142[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.6ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 143[0m
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.8ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 144[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.8ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 145[0m
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.8ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 146[0m
+  [1m[35m (3.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.6ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 147[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.6ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 148[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.6ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 149[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.6ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 150[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (18.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.7ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('C', 'Environmental Quality, Protection and Beautification', '2019-12-06 20:48:50.393230', '2019-12-06 20:48:50.393230')[0m
+  [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.6ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('D', 'Animal-Related', '2019-12-06 20:48:50.419333', '2019-12-06 20:48:50.419333')[0m
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.6ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('F', 'Mental Health, Crisis Intervention', '2019-12-06 20:48:50.427800', '2019-12-06 20:48:50.427800')[0m
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.6ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('H', 'Medical Research', '2019-12-06 20:48:50.436811', '2019-12-06 20:48:50.436811')[0m
+  [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.7ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('K', 'Food, Agriculture and Nutrition', '2019-12-06 20:48:50.445918', '2019-12-06 20:48:50.445918')[0m
+  [1m[35m (3.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.6ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('L', 'Housing, Shelter', '2019-12-06 20:48:50.454065', '2019-12-06 20:48:50.454065')[0m
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.6ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('O', 'Youth Development', '2019-12-06 20:48:50.462193', '2019-12-06 20:48:50.462193')[0m
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.6ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('Q', 'International, Foreign Affairs and National Security', '2019-12-06 20:48:50.471011', '2019-12-06 20:48:50.471011')[0m
+  [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.5ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('U', 'Science and Technology Research Institutes, Services', '2019-12-06 20:48:50.480118', '2019-12-06 20:48:50.480118')[0m
+  [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.7ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('X', 'Religion-Related, Spiritual Development', '2019-12-06 20:48:50.488445', '2019-12-06 20:48:50.488445')[0m
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (4.9ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mCharity Load (0.6ms)[0m  [1m[34mSELECT `charities`.* FROM `charities`[0m
+  [1m[36mCategory Load (0.8ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.6ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 151[0m
+  [1m[35m (3.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.6ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 152[0m
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.6ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 153[0m
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.6ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 154[0m
+  [1m[35m (3.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (1.1ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 155[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.6ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 156[0m
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.7ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 157[0m
+  [1m[35m (3.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.5ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 158[0m
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.8ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 159[0m
+  [1m[35m (5.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.6ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 160[0m
+  [1m[35m (5.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.6ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('C', 'Environmental Quality, Protection and Beautification', '2019-12-06 22:06:01.577143', '2019-12-06 22:06:01.577143')[0m
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.7ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('D', 'Animal-Related', '2019-12-06 22:06:01.584678', '2019-12-06 22:06:01.584678')[0m
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.7ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('F', 'Mental Health, Crisis Intervention', '2019-12-06 22:06:01.592871', '2019-12-06 22:06:01.592871')[0m
+  [1m[35m (3.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (1.2ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('H', 'Medical Research', '2019-12-06 22:06:01.600984', '2019-12-06 22:06:01.600984')[0m
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.7ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('K', 'Food, Agriculture and Nutrition', '2019-12-06 22:06:01.609999', '2019-12-06 22:06:01.609999')[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.6ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('L', 'Housing, Shelter', '2019-12-06 22:06:01.617549', '2019-12-06 22:06:01.617549')[0m
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.5ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('O', 'Youth Development', '2019-12-06 22:06:01.625064', '2019-12-06 22:06:01.625064')[0m
+  [1m[35m (17.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.8ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('Q', 'International, Foreign Affairs and National Security', '2019-12-06 22:06:01.646577', '2019-12-06 22:06:01.646577')[0m
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.7ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('U', 'Science and Technology Research Institutes, Services', '2019-12-06 22:06:01.654463', '2019-12-06 22:06:01.654463')[0m
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.7ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('X', 'Religion-Related, Spiritual Development', '2019-12-06 22:06:01.662337', '2019-12-06 22:06:01.662337')[0m
+  [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mCharity Load (0.9ms)[0m  [1m[34mSELECT `charities`.* FROM `charities`[0m
+  [1m[36mCategory Load (1.1ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.8ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 161[0m
+  [1m[35m (5.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (6.9ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 162[0m
+  [1m[35m (5.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.5ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 163[0m
+  [1m[35m (5.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.6ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 164[0m
+  [1m[35m (7.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.8ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 165[0m
+  [1m[35m (21.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.6ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 166[0m
+  [1m[35m (3.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (1.0ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 167[0m
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.6ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 168[0m
+  [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.7ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 169[0m
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (1.0ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 170[0m
+  [1m[35m (5.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (1.0ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('C', 'Environmental Quality, Protection and Beautification', '2019-12-06 22:13:30.538889', '2019-12-06 22:13:30.538889')[0m
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.9ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('D', 'Animal-Related', '2019-12-06 22:13:30.549773', '2019-12-06 22:13:30.549773')[0m
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.6ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('F', 'Mental Health, Crisis Intervention', '2019-12-06 22:13:30.559161', '2019-12-06 22:13:30.559161')[0m
+  [1m[35m (5.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (1.1ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('H', 'Medical Research', '2019-12-06 22:13:30.569824', '2019-12-06 22:13:30.569824')[0m
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.9ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('K', 'Food, Agriculture and Nutrition', '2019-12-06 22:13:30.582126', '2019-12-06 22:13:30.582126')[0m
+  [1m[35m (6.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.8ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('L', 'Housing, Shelter', '2019-12-06 22:13:30.595295', '2019-12-06 22:13:30.595295')[0m
+  [1m[35m (5.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (1.0ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('O', 'Youth Development', '2019-12-06 22:13:30.605804', '2019-12-06 22:13:30.605804')[0m
+  [1m[35m (5.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (1.3ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('Q', 'International, Foreign Affairs and National Security', '2019-12-06 22:13:30.616465', '2019-12-06 22:13:30.616465')[0m
+  [1m[35m (5.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.9ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('U', 'Science and Technology Research Institutes, Services', '2019-12-06 22:13:30.628559', '2019-12-06 22:13:30.628559')[0m
+  [1m[35m (5.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (1.1ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('X', 'Religion-Related, Spiritual Development', '2019-12-06 22:13:30.639857', '2019-12-06 22:13:30.639857')[0m
+  [1m[35m (5.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Create (1.0ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (171, '680259824', 'PACIFIC COAST FISH WILDLIFE AND WETLANDS ASSOC', 'http://www.orghunter.com/organization/680259824', 'ARCATA', 'California', '2019-12-06 22:13:30.922054', '2019-12-06 22:13:30.922054')[0m
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Create (0.8ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (171, '260253627', 'MENDOCINO COUNTY COOPERATIVE AERIALFIRE PATROL', 'http://www.orghunter.com/organization/260253627', 'WILLITS', 'California', '2019-12-06 22:13:30.932053', '2019-12-06 22:13:30.932053')[0m
+  [1m[35m (5.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Create (1.3ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (171, '452424220', 'DUCKS UNLIMITED INC', 'http://www.orghunter.com/organization/452424220', 'MEMPHIS', 'Tennessee', '2019-12-06 22:13:30.944267', '2019-12-06 22:13:30.944267')[0m
+  [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Create (1.4ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (171, '940392095', 'COAST DAIRIES & LAND CO', 'http://www.orghunter.com/organization/940392095', 'SAN FRANCISCO', 'California', '2019-12-06 22:13:30.957366', '2019-12-06 22:13:30.957366')[0m
+  [1m[35m (5.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Create (1.0ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (171, '274182327', 'MINNESOTA CLEAN MARINA PROGRAM', 'http://www.orghunter.com/organization/274182327', 'SPRING PARK', 'Minnesota', '2019-12-06 22:13:30.970555', '2019-12-06 22:13:30.970555')[0m
+  [1m[35m (4.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Create (1.4ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (171, '411476040', 'PRIOR LAKE ASSOCIATION', 'http://www.orghunter.com/organization/411476040', 'PRIOR LAKE', 'Minnesota', '2019-12-06 22:13:30.982939', '2019-12-06 22:13:30.982939')[0m
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Create (1.0ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (171, '870675826', 'ENERGY SERVICES COALITION', 'http://www.orghunter.com/organization/870675826', 'MORRISON', 'Colorado', '2019-12-06 22:13:30.996244', '2019-12-06 22:13:30.996244')[0m
+  [1m[35m (17.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Create (1.1ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (171, '455242442', 'FRIENDS OF BILL WILLIAMS RIVER AND HAVASU NATIONAL WILDLIFE REFUGES', 'http://www.orghunter.com/organization/455242442', 'FORT MOHAVE', 'Arizona', '2019-12-06 22:13:31.020888', '2019-12-06 22:13:31.020888')[0m
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Create (1.2ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (171, '926010379', 'TRUSTEES FOR ALASKA', 'http://www.orghunter.com/organization/926010379', 'ANCHORAGE', 'Alaska', '2019-12-06 22:13:31.033480', '2019-12-06 22:13:31.033480')[0m
+  [1m[35m (4.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Create (0.7ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (171, '010738143', 'CRYSTAL LAKE PRESERVATION ASSOCIATION INC', 'http://www.orghunter.com/organization/010738143', 'BARTON', 'Vermont', '2019-12-06 22:13:31.045328', '2019-12-06 22:13:31.045328')[0m
+  [1m[35m (4.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Create (1.1ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (171, '311700418', 'GADWALL HABITAT FOUNDATION', 'http://www.orghunter.com/organization/311700418', 'CHICAGO', 'Illinois', '2019-12-06 22:13:31.056855', '2019-12-06 22:13:31.056855')[0m
+  [1m[35m (5.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Create (0.8ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (171, '222499992', 'TOWNSHIP BEAUTIFICATION LEAGUE INC', 'http://www.orghunter.com/organization/222499992', 'MILLBURN', 'New Jersey', '2019-12-06 22:13:31.070277', '2019-12-06 22:13:31.070277')[0m
+  [1m[35m (4.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Create (1.1ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (171, '264380880', 'RIVER VALLEY BOTANICAL GARDENS', 'http://www.orghunter.com/organization/264380880', 'FORT SMITH', 'Arkansas', '2019-12-06 22:13:31.081181', '2019-12-06 22:13:31.081181')[0m
+  [1m[35m (5.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Create (0.9ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (171, '043431323', 'GARDEN CLUB FEDERATION OF MASSACHUSETTS INC', 'http://www.orghunter.com/organization/043431323', 'MANSFIELD', 'Massachusetts', '2019-12-06 22:13:31.093452', '2019-12-06 22:13:31.093452')[0m
+  [1m[35m (5.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Create (0.8ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (171, '452394402', 'SAGINAW-TITTABAWASSEE RIVERS CONTAMINATION COMMUNITY ADVISORY G', 'http://www.orghunter.com/organization/452394402', 'FREELAND', 'Michigan', '2019-12-06 22:13:31.105225', '2019-12-06 22:13:31.105225')[0m
+  [1m[35m (5.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Create (0.9ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (171, '300168281', 'VIRGINIA FEDERATION OF GARDEN CLUB INC', 'http://www.orghunter.com/organization/300168281', 'WINCHESTER', 'Virginia', '2019-12-06 22:13:31.116675', '2019-12-06 22:13:31.116675')[0m
+  [1m[35m (6.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Create (3.9ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (171, '680239825', 'CALIFORNIA NATIVE GRASS ASSOCIATION', 'http://www.orghunter.com/organization/680239825', 'DAVIS', 'California', '2019-12-06 22:13:31.129634', '2019-12-06 22:13:31.129634')[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Create (1.3ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (171, '311683604', 'REP ENVIRONMENTAL EDUCATION FOUNDATION', 'http://www.orghunter.com/organization/311683604', 'OAKTON', 'Virginia', '2019-12-06 22:13:31.146424', '2019-12-06 22:13:31.146424')[0m
+  [1m[35m (5.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Create (1.1ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (171, '571201683', 'THE CENTER FOR AN AGRICULTURAL ECONOMY', 'http://www.orghunter.com/organization/571201683', 'HARDWICK', 'Vermont', '2019-12-06 22:13:31.159517', '2019-12-06 22:13:31.159517')[0m
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Create (1.3ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (171, '431652542', 'MOUNT VERNON COMMUNITY BETTERMENT COUNCIL INC', 'http://www.orghunter.com/organization/431652542', 'MOUNT VERNON', 'Missouri', '2019-12-06 22:13:31.172919', '2019-12-06 22:13:31.172919')[0m
+  [1m[35m (5.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCharity Load (1.0ms)[0m  [1m[34mSELECT `charities`.* FROM `charities` WHERE `charities`.`category_id` = 171 LIMIT 11[0m
+  [1m[36mCharity Load (0.8ms)[0m  [1m[34mSELECT `charities`.* FROM `charities` WHERE `charities`.`category_id` = 171 LIMIT 11[0m
+  [1m[36mCharity Load (0.9ms)[0m  [1m[34mSELECT `charities`.* FROM `charities` WHERE `charities`.`category_id` = 171 LIMIT 11[0m
+  [1m[36mCharity Load (1.1ms)[0m  [1m[34mSELECT `charities`.* FROM `charities` WHERE `charities`.`category_id` = 171 LIMIT 11[0m
+  [1m[36mCharity Load (0.8ms)[0m  [1m[34mSELECT `charities`.* FROM `charities` WHERE `charities`.`category_id` = 171 LIMIT 11[0m
+  [1m[36mCharity Load (1.1ms)[0m  [1m[34mSELECT `charities`.* FROM `charities` WHERE `charities`.`category_id` = 171 LIMIT 11[0m
+  [1m[36mCharity Load (1.0ms)[0m  [1m[34mSELECT `charities`.* FROM `charities` WHERE `charities`.`category_id` = 171 LIMIT 11[0m
+  [1m[36mCharity Load (1.1ms)[0m  [1m[34mSELECT `charities`.* FROM `charities` WHERE `charities`.`category_id` = 171 LIMIT 11[0m
+  [1m[36mCharity Load (0.8ms)[0m  [1m[34mSELECT `charities`.* FROM `charities` WHERE `charities`.`category_id` = 171 LIMIT 11[0m
+  [1m[36mCharity Load (2.9ms)[0m  [1m[34mSELECT `charities`.* FROM `charities` WHERE `charities`.`category_id` = 171 LIMIT 11[0m
+  [1m[36mCharity Load (0.9ms)[0m  [1m[34mSELECT `charities`.* FROM `charities` WHERE `charities`.`category_id` = 171 LIMIT 11[0m
+  [1m[36mCharity Load (1.3ms)[0m  [1m[34mSELECT `charities`.* FROM `charities` WHERE `charities`.`category_id` = 171 LIMIT 11[0m
+  [1m[36mCharity Load (1.1ms)[0m  [1m[34mSELECT `charities`.* FROM `charities` WHERE `charities`.`category_id` = 171 LIMIT 11[0m
+  [1m[36mCharity Load (1.1ms)[0m  [1m[34mSELECT `charities`.* FROM `charities` WHERE `charities`.`category_id` = 171 LIMIT 11[0m
+  [1m[36mCharity Load (1.3ms)[0m  [1m[34mSELECT `charities`.* FROM `charities` WHERE `charities`.`category_id` = 171 LIMIT 11[0m
+  [1m[36mCharity Load (1.1ms)[0m  [1m[34mSELECT `charities`.* FROM `charities` WHERE `charities`.`category_id` = 171 LIMIT 11[0m
+  [1m[36mCharity Load (1.6ms)[0m  [1m[34mSELECT `charities`.* FROM `charities` WHERE `charities`.`category_id` = 171 LIMIT 11[0m
+  [1m[36mCharity Load (1.3ms)[0m  [1m[34mSELECT `charities`.* FROM `charities` WHERE `charities`.`category_id` = 171 LIMIT 11[0m
+  [1m[36mCharity Load (1.2ms)[0m  [1m[34mSELECT `charities`.* FROM `charities` WHERE `charities`.`category_id` = 171 LIMIT 11[0m
+  [1m[36mCharity Load (1.5ms)[0m  [1m[34mSELECT `charities`.* FROM `charities` WHERE `charities`.`category_id` = 171 LIMIT 11[0m
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mCharity Load (0.9ms)[0m  [1m[34mSELECT `charities`.* FROM `charities`[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (0.7ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 14[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (0.5ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 15[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (0.8ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 16[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (0.6ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 17[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (0.4ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 18[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (0.6ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 19[0m
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (0.6ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 20[0m
+  [1m[35m (19.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (0.7ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 21[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (0.5ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 22[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (0.5ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 23[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (0.6ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 24[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (0.6ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 25[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (0.6ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 26[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (0.7ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 27[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (0.6ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 28[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (0.5ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 29[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (0.5ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 30[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (0.7ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 31[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (0.6ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 32[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (0.5ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 33[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCategory Load (0.8ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.5ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 171[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.6ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 172[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.4ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 173[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.6ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 174[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.5ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 175[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.5ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 176[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.5ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 177[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.5ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 178[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.7ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 179[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.6ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 180[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.5ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('C', 'Environmental Quality, Protection and Beautification', '2019-12-06 23:23:27.467767', '2019-12-06 23:23:27.467767')[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.6ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('D', 'Animal-Related', '2019-12-06 23:23:27.474378', '2019-12-06 23:23:27.474378')[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.5ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('F', 'Mental Health, Crisis Intervention', '2019-12-06 23:23:27.480854', '2019-12-06 23:23:27.480854')[0m
+  [1m[35m (18.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.7ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('H', 'Medical Research', '2019-12-06 23:23:27.502405', '2019-12-06 23:23:27.502405')[0m
+  [1m[35m (3.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.6ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('K', 'Food, Agriculture and Nutrition', '2019-12-06 23:23:27.509710', '2019-12-06 23:23:27.509710')[0m
+  [1m[35m (3.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.5ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('L', 'Housing, Shelter', '2019-12-06 23:23:27.516864', '2019-12-06 23:23:27.516864')[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.7ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('O', 'Youth Development', '2019-12-06 23:23:27.523288', '2019-12-06 23:23:27.523288')[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.5ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('Q', 'International, Foreign Affairs and National Security', '2019-12-06 23:23:27.529875', '2019-12-06 23:23:27.529875')[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.7ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('U', 'Science and Technology Research Institutes, Services', '2019-12-06 23:23:27.535833', '2019-12-06 23:23:27.535833')[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.5ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('X', 'Religion-Related, Spiritual Development', '2019-12-06 23:23:27.542185', '2019-12-06 23:23:27.542185')[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Create (0.5ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (181, '680259824', 'PACIFIC COAST FISH WILDLIFE AND WETLANDS ASSOC', 'http://www.orghunter.com/organization/680259824', 'ARCATA', 'California', '2019-12-06 23:23:27.902526', '2019-12-06 23:23:27.902526')[0m
+  [1m[35m (3.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Create (0.6ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (181, '260253627', 'MENDOCINO COUNTY COOPERATIVE AERIALFIRE PATROL', 'http://www.orghunter.com/organization/260253627', 'WILLITS', 'California', '2019-12-06 23:23:27.910722', '2019-12-06 23:23:27.910722')[0m
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Create (0.5ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (181, '452424220', 'DUCKS UNLIMITED INC', 'http://www.orghunter.com/organization/452424220', 'MEMPHIS', 'Tennessee', '2019-12-06 23:23:27.918619', '2019-12-06 23:23:27.918619')[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Create (0.6ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (181, '940392095', 'COAST DAIRIES & LAND CO', 'http://www.orghunter.com/organization/940392095', 'SAN FRANCISCO', 'California', '2019-12-06 23:23:27.925775', '2019-12-06 23:23:27.925775')[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Create (0.5ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (181, '274182327', 'MINNESOTA CLEAN MARINA PROGRAM', 'http://www.orghunter.com/organization/274182327', 'SPRING PARK', 'Minnesota', '2019-12-06 23:23:27.933147', '2019-12-06 23:23:27.933147')[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Create (0.6ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (181, '411476040', 'PRIOR LAKE ASSOCIATION', 'http://www.orghunter.com/organization/411476040', 'PRIOR LAKE', 'Minnesota', '2019-12-06 23:23:27.940464', '2019-12-06 23:23:27.940464')[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Create (0.5ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (181, '870675826', 'ENERGY SERVICES COALITION', 'http://www.orghunter.com/organization/870675826', 'MORRISON', 'Colorado', '2019-12-06 23:23:27.947576', '2019-12-06 23:23:27.947576')[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Create (0.6ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (181, '455242442', 'FRIENDS OF BILL WILLIAMS RIVER AND HAVASU NATIONAL WILDLIFE REFUGES', 'http://www.orghunter.com/organization/455242442', 'FORT MOHAVE', 'Arizona', '2019-12-06 23:23:27.954760', '2019-12-06 23:23:27.954760')[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Create (0.6ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (181, '926010379', 'TRUSTEES FOR ALASKA', 'http://www.orghunter.com/organization/926010379', 'ANCHORAGE', 'Alaska', '2019-12-06 23:23:27.961622', '2019-12-06 23:23:27.961622')[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Create (0.7ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (181, '010738143', 'CRYSTAL LAKE PRESERVATION ASSOCIATION INC', 'http://www.orghunter.com/organization/010738143', 'BARTON', 'Vermont', '2019-12-06 23:23:27.968229', '2019-12-06 23:23:27.968229')[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Create (0.6ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (181, '311700418', 'GADWALL HABITAT FOUNDATION', 'http://www.orghunter.com/organization/311700418', 'CHICAGO', 'Illinois', '2019-12-06 23:23:27.975415', '2019-12-06 23:23:27.975415')[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Create (12.6ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (181, '222499992', 'TOWNSHIP BEAUTIFICATION LEAGUE INC', 'http://www.orghunter.com/organization/222499992', 'MILLBURN', 'New Jersey', '2019-12-06 23:23:27.982432', '2019-12-06 23:23:27.982432')[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Create (0.9ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (181, '264380880', 'RIVER VALLEY BOTANICAL GARDENS', 'http://www.orghunter.com/organization/264380880', 'FORT SMITH', 'Arkansas', '2019-12-06 23:23:28.001777', '2019-12-06 23:23:28.001777')[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Create (0.6ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (181, '043431323', 'GARDEN CLUB FEDERATION OF MASSACHUSETTS INC', 'http://www.orghunter.com/organization/043431323', 'MANSFIELD', 'Massachusetts', '2019-12-06 23:23:28.009118', '2019-12-06 23:23:28.009118')[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Create (0.5ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (181, '452394402', 'SAGINAW-TITTABAWASSEE RIVERS CONTAMINATION COMMUNITY ADVISORY G', 'http://www.orghunter.com/organization/452394402', 'FREELAND', 'Michigan', '2019-12-06 23:23:28.015993', '2019-12-06 23:23:28.015993')[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Create (0.7ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (181, '300168281', 'VIRGINIA FEDERATION OF GARDEN CLUB INC', 'http://www.orghunter.com/organization/300168281', 'WINCHESTER', 'Virginia', '2019-12-06 23:23:28.023016', '2019-12-06 23:23:28.023016')[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Create (0.6ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (181, '680239825', 'CALIFORNIA NATIVE GRASS ASSOCIATION', 'http://www.orghunter.com/organization/680239825', 'DAVIS', 'California', '2019-12-06 23:23:28.030065', '2019-12-06 23:23:28.030065')[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Create (0.7ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (181, '311683604', 'REP ENVIRONMENTAL EDUCATION FOUNDATION', 'http://www.orghunter.com/organization/311683604', 'OAKTON', 'Virginia', '2019-12-06 23:23:28.037045', '2019-12-06 23:23:28.037045')[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Create (0.6ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (181, '571201683', 'THE CENTER FOR AN AGRICULTURAL ECONOMY', 'http://www.orghunter.com/organization/571201683', 'HARDWICK', 'Vermont', '2019-12-06 23:23:28.043994', '2019-12-06 23:23:28.043994')[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Create (0.6ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (181, '431652542', 'MOUNT VERNON COMMUNITY BETTERMENT COUNCIL INC', 'http://www.orghunter.com/organization/431652542', 'MOUNT VERNON', 'Missouri', '2019-12-06 23:23:28.050972', '2019-12-06 23:23:28.050972')[0m
+  [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCharity Load (0.9ms)[0m  [1m[34mSELECT `charities`.* FROM `charities` WHERE `charities`.`category_id` = 181 LIMIT 11[0m
+  [1m[36mCharity Load (0.8ms)[0m  [1m[34mSELECT `charities`.* FROM `charities` WHERE `charities`.`category_id` = 181 LIMIT 11[0m
+  [1m[36mCharity Load (1.0ms)[0m  [1m[34mSELECT `charities`.* FROM `charities` WHERE `charities`.`category_id` = 181 LIMIT 11[0m
+  [1m[36mCharity Load (0.6ms)[0m  [1m[34mSELECT `charities`.* FROM `charities` WHERE `charities`.`category_id` = 181 LIMIT 11[0m
+  [1m[36mCharity Load (0.8ms)[0m  [1m[34mSELECT `charities`.* FROM `charities` WHERE `charities`.`category_id` = 181 LIMIT 11[0m
+  [1m[36mCharity Load (0.8ms)[0m  [1m[34mSELECT `charities`.* FROM `charities` WHERE `charities`.`category_id` = 181 LIMIT 11[0m
+  [1m[36mCharity Load (0.8ms)[0m  [1m[34mSELECT `charities`.* FROM `charities` WHERE `charities`.`category_id` = 181 LIMIT 11[0m
+  [1m[36mCharity Load (0.7ms)[0m  [1m[34mSELECT `charities`.* FROM `charities` WHERE `charities`.`category_id` = 181 LIMIT 11[0m
+  [1m[36mCharity Load (0.8ms)[0m  [1m[34mSELECT `charities`.* FROM `charities` WHERE `charities`.`category_id` = 181 LIMIT 11[0m
+  [1m[36mCharity Load (0.7ms)[0m  [1m[34mSELECT `charities`.* FROM `charities` WHERE `charities`.`category_id` = 181 LIMIT 11[0m
+  [1m[36mCharity Load (0.7ms)[0m  [1m[34mSELECT `charities`.* FROM `charities` WHERE `charities`.`category_id` = 181 LIMIT 11[0m
+  [1m[36mCharity Load (0.7ms)[0m  [1m[34mSELECT `charities`.* FROM `charities` WHERE `charities`.`category_id` = 181 LIMIT 11[0m
+  [1m[36mCharity Load (0.8ms)[0m  [1m[34mSELECT `charities`.* FROM `charities` WHERE `charities`.`category_id` = 181 LIMIT 11[0m
+  [1m[36mCharity Load (0.7ms)[0m  [1m[34mSELECT `charities`.* FROM `charities` WHERE `charities`.`category_id` = 181 LIMIT 11[0m
+  [1m[36mCharity Load (0.8ms)[0m  [1m[34mSELECT `charities`.* FROM `charities` WHERE `charities`.`category_id` = 181 LIMIT 11[0m
+  [1m[36mCharity Load (1.1ms)[0m  [1m[34mSELECT `charities`.* FROM `charities` WHERE `charities`.`category_id` = 181 LIMIT 11[0m
+  [1m[36mCharity Load (0.8ms)[0m  [1m[34mSELECT `charities`.* FROM `charities` WHERE `charities`.`category_id` = 181 LIMIT 11[0m
+  [1m[36mCharity Load (0.7ms)[0m  [1m[34mSELECT `charities`.* FROM `charities` WHERE `charities`.`category_id` = 181 LIMIT 11[0m
+  [1m[36mCharity Load (0.8ms)[0m  [1m[34mSELECT `charities`.* FROM `charities` WHERE `charities`.`category_id` = 181 LIMIT 11[0m
+  [1m[36mCharity Load (0.9ms)[0m  [1m[34mSELECT `charities`.* FROM `charities` WHERE `charities`.`category_id` = 181 LIMIT 11[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (1.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mCharity Load (1.1ms)[0m  [1m[34mSELECT `charities`.* FROM `charities`[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (0.7ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 34[0m
+  [1m[35m (4.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (0.7ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 35[0m
+  [1m[35m (4.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (0.7ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 36[0m
+  [1m[35m (7.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (0.7ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 37[0m
+  [1m[35m (5.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (0.9ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 38[0m
+  [1m[35m (6.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (1.0ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 39[0m
+  [1m[35m (19.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (0.7ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 40[0m
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (1.0ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 41[0m
+  [1m[35m (5.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (0.7ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 42[0m
+  [1m[35m (5.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (0.9ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 43[0m
+  [1m[35m (5.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (0.9ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 44[0m
+  [1m[35m (5.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (0.7ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 45[0m
+  [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (1.2ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 46[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (1.1ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 47[0m
+  [1m[35m (5.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (0.7ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 48[0m
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (1.2ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 49[0m
+  [1m[35m (4.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (0.9ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 50[0m
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (1.0ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 51[0m
+  [1m[35m (5.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (1.0ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 52[0m
+  [1m[35m (4.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (0.6ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 53[0m
+  [1m[35m (5.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCategory Load (14.1ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.6ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 181[0m
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (1.3ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 182[0m
+  [1m[35m (5.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (1.0ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 183[0m
+  [1m[35m (5.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.7ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 184[0m
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.7ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 185[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.6ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 186[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.9ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 187[0m
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.7ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 188[0m
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.9ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 189[0m
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.6ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 190[0m
+  [1m[35m (5.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.7ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('C', 'Environmental Quality, Protection and Beautification', '2019-12-06 23:28:01.222519', '2019-12-06 23:28:01.222519')[0m
+  [1m[35m (3.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.8ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('D', 'Animal-Related', '2019-12-06 23:28:01.230958', '2019-12-06 23:28:01.230958')[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (1.0ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('F', 'Mental Health, Crisis Intervention', '2019-12-06 23:28:01.251518', '2019-12-06 23:28:01.251518')[0m
+  [1m[35m (3.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (1.0ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('H', 'Medical Research', '2019-12-06 23:28:01.259902', '2019-12-06 23:28:01.259902')[0m
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (1.0ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('K', 'Food, Agriculture and Nutrition', '2019-12-06 23:28:01.268368', '2019-12-06 23:28:01.268368')[0m
+  [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (1.2ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('L', 'Housing, Shelter', '2019-12-06 23:28:01.276839', '2019-12-06 23:28:01.276839')[0m
+  [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.9ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('O', 'Youth Development', '2019-12-06 23:28:01.286008', '2019-12-06 23:28:01.286008')[0m
+  [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.7ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('Q', 'International, Foreign Affairs and National Security', '2019-12-06 23:28:01.294720', '2019-12-06 23:28:01.294720')[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.9ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('U', 'Science and Technology Research Institutes, Services', '2019-12-06 23:28:01.301649', '2019-12-06 23:28:01.301649')[0m
+  [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (1.0ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('X', 'Religion-Related, Spiritual Development', '2019-12-06 23:28:01.310030', '2019-12-06 23:28:01.310030')[0m
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT `charities`.* FROM `charities`[0m
+  [1m[36mCategory Load (0.9ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.9ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 191[0m
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (1.4ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 192[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.9ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 193[0m
+  [1m[35m (3.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.5ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 194[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (1.1ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 195[0m
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (1.0ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 196[0m
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.9ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 197[0m
+  [1m[35m (3.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (16.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.6ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 198[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.8ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 199[0m
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.7ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 200[0m
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.5ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('C', 'Environmental Quality, Protection and Beautification', '2019-12-06 23:29:24.295921', '2019-12-06 23:29:24.295921')[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.5ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('D', 'Animal-Related', '2019-12-06 23:29:24.303789', '2019-12-06 23:29:24.303789')[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.6ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('F', 'Mental Health, Crisis Intervention', '2019-12-06 23:29:24.309848', '2019-12-06 23:29:24.309848')[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (1.0ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('H', 'Medical Research', '2019-12-06 23:29:24.316874', '2019-12-06 23:29:24.316874')[0m
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.9ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('K', 'Food, Agriculture and Nutrition', '2019-12-06 23:29:24.326562', '2019-12-06 23:29:24.326562')[0m
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.9ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('L', 'Housing, Shelter', '2019-12-06 23:29:24.336007', '2019-12-06 23:29:24.336007')[0m
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.9ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('O', 'Youth Development', '2019-12-06 23:29:24.345515', '2019-12-06 23:29:24.345515')[0m
+  [1m[35m (3.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (1.0ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('Q', 'International, Foreign Affairs and National Security', '2019-12-06 23:29:24.354281', '2019-12-06 23:29:24.354281')[0m
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.7ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('U', 'Science and Technology Research Institutes, Services', '2019-12-06 23:29:24.363195', '2019-12-06 23:29:24.363195')[0m
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.9ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('X', 'Religion-Related, Spiritual Development', '2019-12-06 23:29:24.371754', '2019-12-06 23:29:24.371754')[0m
+  [1m[35m (5.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mCharity Load (0.5ms)[0m  [1m[34mSELECT `charities`.* FROM `charities`[0m
+  [1m[36mCategory Load (0.9ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (1.0ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 201[0m
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.7ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 202[0m
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.9ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 203[0m
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.8ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 204[0m
+  [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.9ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 205[0m
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.7ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 206[0m
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.9ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 207[0m
+  [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.9ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 208[0m
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.7ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 209[0m
+  [1m[35m (18.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.6ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 210[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.4ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('C', 'Environmental Quality, Protection and Beautification', '2019-12-06 23:29:52.795981', '2019-12-06 23:29:52.795981')[0m
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.7ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('D', 'Animal-Related', '2019-12-06 23:29:52.805010', '2019-12-06 23:29:52.805010')[0m
+  [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.8ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('F', 'Mental Health, Crisis Intervention', '2019-12-06 23:29:52.813832', '2019-12-06 23:29:52.813832')[0m
+  [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.8ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('H', 'Medical Research', '2019-12-06 23:29:52.823564', '2019-12-06 23:29:52.823564')[0m
+  [1m[35m (3.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.9ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('K', 'Food, Agriculture and Nutrition', '2019-12-06 23:29:52.832938', '2019-12-06 23:29:52.832938')[0m
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.9ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('L', 'Housing, Shelter', '2019-12-06 23:29:52.842764', '2019-12-06 23:29:52.842764')[0m
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.6ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('O', 'Youth Development', '2019-12-06 23:29:52.851788', '2019-12-06 23:29:52.851788')[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.6ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('Q', 'International, Foreign Affairs and National Security', '2019-12-06 23:29:52.858682', '2019-12-06 23:29:52.858682')[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.5ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('U', 'Science and Technology Research Institutes, Services', '2019-12-06 23:29:52.865092', '2019-12-06 23:29:52.865092')[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.9ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('X', 'Religion-Related, Spiritual Development', '2019-12-06 23:29:52.871790', '2019-12-06 23:29:52.871790')[0m
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Create (1.6ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (211, '680259824', 'PACIFIC COAST FISH WILDLIFE AND WETLANDS ASSOC', 'http://www.orghunter.com/organization/680259824', 'ARCATA', 'California', '2019-12-06 23:29:53.255896', '2019-12-06 23:29:53.255896')[0m
+  [1m[36mCharity Create (0.8ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (211, '260253627', 'MENDOCINO COUNTY COOPERATIVE AERIALFIRE PATROL', 'http://www.orghunter.com/organization/260253627', 'WILLITS', 'California', '2019-12-06 23:29:53.260952', '2019-12-06 23:29:53.260952')[0m
+  [1m[36mCharity Create (0.6ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (211, '452424220', 'DUCKS UNLIMITED INC', 'http://www.orghunter.com/organization/452424220', 'MEMPHIS', 'Tennessee', '2019-12-06 23:29:53.264072', '2019-12-06 23:29:53.264072')[0m
+  [1m[36mCharity Create (0.7ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (211, '940392095', 'COAST DAIRIES & LAND CO', 'http://www.orghunter.com/organization/940392095', 'SAN FRANCISCO', 'California', '2019-12-06 23:29:53.266357', '2019-12-06 23:29:53.266357')[0m
+  [1m[36mCharity Create (1.2ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (211, '274182327', 'MINNESOTA CLEAN MARINA PROGRAM', 'http://www.orghunter.com/organization/274182327', 'SPRING PARK', 'Minnesota', '2019-12-06 23:29:53.270060', '2019-12-06 23:29:53.270060')[0m
+  [1m[36mCharity Create (1.0ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (211, '411476040', 'PRIOR LAKE ASSOCIATION', 'http://www.orghunter.com/organization/411476040', 'PRIOR LAKE', 'Minnesota', '2019-12-06 23:29:53.273653', '2019-12-06 23:29:53.273653')[0m
+  [1m[36mCharity Create (1.2ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (211, '870675826', 'ENERGY SERVICES COALITION', 'http://www.orghunter.com/organization/870675826', 'MORRISON', 'Colorado', '2019-12-06 23:29:53.277836', '2019-12-06 23:29:53.277836')[0m
+  [1m[36mCharity Create (1.3ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (211, '455242442', 'FRIENDS OF BILL WILLIAMS RIVER AND HAVASU NATIONAL WILDLIFE REFUGES', 'http://www.orghunter.com/organization/455242442', 'FORT MOHAVE', 'Arizona', '2019-12-06 23:29:53.282160', '2019-12-06 23:29:53.282160')[0m
+  [1m[36mCharity Create (0.8ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (211, '926010379', 'TRUSTEES FOR ALASKA', 'http://www.orghunter.com/organization/926010379', 'ANCHORAGE', 'Alaska', '2019-12-06 23:29:53.285940', '2019-12-06 23:29:53.285940')[0m
+  [1m[36mCharity Create (0.5ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (211, '010738143', 'CRYSTAL LAKE PRESERVATION ASSOCIATION INC', 'http://www.orghunter.com/organization/010738143', 'BARTON', 'Vermont', '2019-12-06 23:29:53.288262', '2019-12-06 23:29:53.288262')[0m
+  [1m[36mCharity Create (0.9ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (211, '311700418', 'GADWALL HABITAT FOUNDATION', 'http://www.orghunter.com/organization/311700418', 'CHICAGO', 'Illinois', '2019-12-06 23:29:53.290221', '2019-12-06 23:29:53.290221')[0m
+  [1m[36mCharity Create (0.9ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (211, '222499992', 'TOWNSHIP BEAUTIFICATION LEAGUE INC', 'http://www.orghunter.com/organization/222499992', 'MILLBURN', 'New Jersey', '2019-12-06 23:29:53.293121', '2019-12-06 23:29:53.293121')[0m
+  [1m[36mCharity Create (1.1ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (211, '264380880', 'RIVER VALLEY BOTANICAL GARDENS', 'http://www.orghunter.com/organization/264380880', 'FORT SMITH', 'Arkansas', '2019-12-06 23:29:53.296465', '2019-12-06 23:29:53.296465')[0m
+  [1m[36mCharity Create (0.9ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (211, '043431323', 'GARDEN CLUB FEDERATION OF MASSACHUSETTS INC', 'http://www.orghunter.com/organization/043431323', 'MANSFIELD', 'Massachusetts', '2019-12-06 23:29:53.300478', '2019-12-06 23:29:53.300478')[0m
+  [1m[36mCharity Create (1.0ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (211, '452394402', 'SAGINAW-TITTABAWASSEE RIVERS CONTAMINATION COMMUNITY ADVISORY G', 'http://www.orghunter.com/organization/452394402', 'FREELAND', 'Michigan', '2019-12-06 23:29:53.303830', '2019-12-06 23:29:53.303830')[0m
+  [1m[36mCharity Create (1.0ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (211, '300168281', 'VIRGINIA FEDERATION OF GARDEN CLUB INC', 'http://www.orghunter.com/organization/300168281', 'WINCHESTER', 'Virginia', '2019-12-06 23:29:53.307327', '2019-12-06 23:29:53.307327')[0m
+  [1m[36mCharity Create (1.0ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (211, '680239825', 'CALIFORNIA NATIVE GRASS ASSOCIATION', 'http://www.orghunter.com/organization/680239825', 'DAVIS', 'California', '2019-12-06 23:29:53.311123', '2019-12-06 23:29:53.311123')[0m
+  [1m[36mCharity Create (1.2ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (211, '311683604', 'REP ENVIRONMENTAL EDUCATION FOUNDATION', 'http://www.orghunter.com/organization/311683604', 'OAKTON', 'Virginia', '2019-12-06 23:29:53.314574', '2019-12-06 23:29:53.314574')[0m
+  [1m[36mCharity Create (1.0ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (211, '571201683', 'THE CENTER FOR AN AGRICULTURAL ECONOMY', 'http://www.orghunter.com/organization/571201683', 'HARDWICK', 'Vermont', '2019-12-06 23:29:53.318360', '2019-12-06 23:29:53.318360')[0m
+  [1m[36mCharity Create (1.4ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (211, '431652542', 'MOUNT VERNON COMMUNITY BETTERMENT COUNCIL INC', 'http://www.orghunter.com/organization/431652542', 'MOUNT VERNON', 'Missouri', '2019-12-06 23:29:53.322274', '2019-12-06 23:29:53.322274')[0m
+  [1m[35m (5.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mCharity Load (0.8ms)[0m  [1m[34mSELECT `charities`.* FROM `charities`[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (0.7ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 54[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (0.6ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 55[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (0.5ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 56[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (0.6ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 57[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (0.6ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 58[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (0.6ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 59[0m
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (0.6ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 60[0m
+  [1m[35m (17.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (0.6ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 61[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (0.9ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 62[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (0.7ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 63[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (0.7ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 64[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (0.6ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 65[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (0.7ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 66[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (0.7ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 67[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (0.6ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 68[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (0.6ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 69[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (0.6ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 70[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (0.7ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 71[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (0.6ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 72[0m
+  [1m[35m (4.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Destroy (0.6ms)[0m  [1m[31mDELETE FROM `charities` WHERE `charities`.`id` = 73[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.7ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 211[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.6ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 212[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.7ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 213[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.5ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 214[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (1.0ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 215[0m
+  [1m[35m (15.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.7ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 216[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.6ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 217[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.6ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 218[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.8ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 219[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Destroy (0.7ms)[0m  [1m[31mDELETE FROM `categories` WHERE `categories`.`id` = 220[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.7ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('C', 'Environmental Quality, Protection and Beautification', '2019-12-06 23:30:44.313582', '2019-12-06 23:30:44.313582')[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.5ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('D', 'Animal-Related', '2019-12-06 23:30:44.320418', '2019-12-06 23:30:44.320418')[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.6ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('F', 'Mental Health, Crisis Intervention', '2019-12-06 23:30:44.326588', '2019-12-06 23:30:44.326588')[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.5ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('H', 'Medical Research', '2019-12-06 23:30:44.332389', '2019-12-06 23:30:44.332389')[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.6ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('K', 'Food, Agriculture and Nutrition', '2019-12-06 23:30:44.338124', '2019-12-06 23:30:44.338124')[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.6ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('L', 'Housing, Shelter', '2019-12-06 23:30:44.344066', '2019-12-06 23:30:44.344066')[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.6ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('O', 'Youth Development', '2019-12-06 23:30:44.350032', '2019-12-06 23:30:44.350032')[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.7ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('Q', 'International, Foreign Affairs and National Security', '2019-12-06 23:30:44.370067', '2019-12-06 23:30:44.370067')[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.5ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('U', 'Science and Technology Research Institutes, Services', '2019-12-06 23:30:44.376554', '2019-12-06 23:30:44.376554')[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Create (0.6ms)[0m  [1m[32mINSERT INTO `categories` (`category_id`, `description`, `created_at`, `updated_at`) VALUES ('X', 'Religion-Related, Spiritual Development', '2019-12-06 23:30:44.382952', '2019-12-06 23:30:44.382952')[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharity Create (1.0ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (221, '680259824', 'PACIFIC COAST FISH WILDLIFE AND WETLANDS ASSOC', 'http://www.orghunter.com/organization/680259824', 'ARCATA', 'California', '2019-12-06 23:30:44.699574', '2019-12-06 23:30:44.699574')[0m
+  [1m[36mCharity Create (1.0ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (221, '260253627', 'MENDOCINO COUNTY COOPERATIVE AERIALFIRE PATROL', 'http://www.orghunter.com/organization/260253627', 'WILLITS', 'California', '2019-12-06 23:30:44.707639', '2019-12-06 23:30:44.707639')[0m
+  [1m[36mCharity Create (1.0ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (221, '452424220', 'DUCKS UNLIMITED INC', 'http://www.orghunter.com/organization/452424220', 'MEMPHIS', 'Tennessee', '2019-12-06 23:30:44.711241', '2019-12-06 23:30:44.711241')[0m
+  [1m[36mCharity Create (1.1ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (221, '940392095', 'COAST DAIRIES & LAND CO', 'http://www.orghunter.com/organization/940392095', 'SAN FRANCISCO', 'California', '2019-12-06 23:30:44.714813', '2019-12-06 23:30:44.714813')[0m
+  [1m[36mCharity Create (0.9ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (221, '274182327', 'MINNESOTA CLEAN MARINA PROGRAM', 'http://www.orghunter.com/organization/274182327', 'SPRING PARK', 'Minnesota', '2019-12-06 23:30:44.718696', '2019-12-06 23:30:44.718696')[0m
+  [1m[36mCharity Create (1.2ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (221, '411476040', 'PRIOR LAKE ASSOCIATION', 'http://www.orghunter.com/organization/411476040', 'PRIOR LAKE', 'Minnesota', '2019-12-06 23:30:44.721515', '2019-12-06 23:30:44.721515')[0m
+  [1m[36mCharity Create (0.8ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (221, '870675826', 'ENERGY SERVICES COALITION', 'http://www.orghunter.com/organization/870675826', 'MORRISON', 'Colorado', '2019-12-06 23:30:44.725282', '2019-12-06 23:30:44.725282')[0m
+  [1m[36mCharity Create (1.1ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (221, '455242442', 'FRIENDS OF BILL WILLIAMS RIVER AND HAVASU NATIONAL WILDLIFE REFUGES', 'http://www.orghunter.com/organization/455242442', 'FORT MOHAVE', 'Arizona', '2019-12-06 23:30:44.729942', '2019-12-06 23:30:44.729942')[0m
+  [1m[36mCharity Create (1.1ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (221, '926010379', 'TRUSTEES FOR ALASKA', 'http://www.orghunter.com/organization/926010379', 'ANCHORAGE', 'Alaska', '2019-12-06 23:30:44.734519', '2019-12-06 23:30:44.734519')[0m
+  [1m[36mCharity Create (0.8ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (221, '010738143', 'CRYSTAL LAKE PRESERVATION ASSOCIATION INC', 'http://www.orghunter.com/organization/010738143', 'BARTON', 'Vermont', '2019-12-06 23:30:44.737707', '2019-12-06 23:30:44.737707')[0m
+  [1m[36mCharity Create (0.6ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (221, '311700418', 'GADWALL HABITAT FOUNDATION', 'http://www.orghunter.com/organization/311700418', 'CHICAGO', 'Illinois', '2019-12-06 23:30:44.740683', '2019-12-06 23:30:44.740683')[0m
+  [1m[36mCharity Create (0.6ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (221, '222499992', 'TOWNSHIP BEAUTIFICATION LEAGUE INC', 'http://www.orghunter.com/organization/222499992', 'MILLBURN', 'New Jersey', '2019-12-06 23:30:44.742800', '2019-12-06 23:30:44.742800')[0m
+  [1m[36mCharity Create (0.7ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (221, '264380880', 'RIVER VALLEY BOTANICAL GARDENS', 'http://www.orghunter.com/organization/264380880', 'FORT SMITH', 'Arkansas', '2019-12-06 23:30:44.756052', '2019-12-06 23:30:44.756052')[0m
+  [1m[36mCharity Create (0.5ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (221, '043431323', 'GARDEN CLUB FEDERATION OF MASSACHUSETTS INC', 'http://www.orghunter.com/organization/043431323', 'MANSFIELD', 'Massachusetts', '2019-12-06 23:30:44.757969', '2019-12-06 23:30:44.757969')[0m
+  [1m[36mCharity Create (0.4ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (221, '452394402', 'SAGINAW-TITTABAWASSEE RIVERS CONTAMINATION COMMUNITY ADVISORY G', 'http://www.orghunter.com/organization/452394402', 'FREELAND', 'Michigan', '2019-12-06 23:30:44.759535', '2019-12-06 23:30:44.759535')[0m
+  [1m[36mCharity Create (0.4ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (221, '300168281', 'VIRGINIA FEDERATION OF GARDEN CLUB INC', 'http://www.orghunter.com/organization/300168281', 'WINCHESTER', 'Virginia', '2019-12-06 23:30:44.761177', '2019-12-06 23:30:44.761177')[0m
+  [1m[36mCharity Create (0.5ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (221, '680239825', 'CALIFORNIA NATIVE GRASS ASSOCIATION', 'http://www.orghunter.com/organization/680239825', 'DAVIS', 'California', '2019-12-06 23:30:44.762795', '2019-12-06 23:30:44.762795')[0m
+  [1m[36mCharity Create (0.5ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (221, '311683604', 'REP ENVIRONMENTAL EDUCATION FOUNDATION', 'http://www.orghunter.com/organization/311683604', 'OAKTON', 'Virginia', '2019-12-06 23:30:44.764319', '2019-12-06 23:30:44.764319')[0m
+  [1m[36mCharity Create (0.5ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (221, '571201683', 'THE CENTER FOR AN AGRICULTURAL ECONOMY', 'http://www.orghunter.com/organization/571201683', 'HARDWICK', 'Vermont', '2019-12-06 23:30:44.765850', '2019-12-06 23:30:44.765850')[0m
+  [1m[36mCharity Create (0.5ms)[0m  [1m[32mINSERT INTO `charities` (`category_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`) VALUES (221, '431652542', 'MOUNT VERNON COMMUNITY BETTERMENT COUNCIL INC', 'http://www.orghunter.com/organization/431652542', 'MOUNT VERNON', 'Missouri', '2019-12-06 23:30:44.767345', '2019-12-06 23:30:44.767345')[0m
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m

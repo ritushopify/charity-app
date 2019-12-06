@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function getCharities(id) {
-  console.log("getting charities");
+  console.log("id is now " + id);
   return [
     {
       ein: "680259824",
