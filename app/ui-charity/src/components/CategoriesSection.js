@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useCallback } from "react";
 import gql from "graphql-tag";
 import { useQuery } from "@apollo/react-hooks";
 
@@ -23,12 +23,12 @@ export default function CategoriesSection() {
   }
   console.log("data is" + data.categories);
   const items = data.categories.map(category => {
-    const attributes = {
-      url: category.categoryId,
+    return {
+      url: "charities",
       label: category.description,
       icon: HomeMajorMonotone
+      //    onClick: selectedCategory(category.categoryId)
     };
-    return attributes;
   });
   return <Navigation.Section separator title="Categories" items={items} />;
 }
