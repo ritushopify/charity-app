@@ -1,8 +1,8 @@
-import React, { useCallback } from "react";
+import React from "react";
 import { useQuery } from "@apollo/react-hooks";
 import { Navigation } from "@shopify/polaris";
 import { HomeMajorMonotone } from "@shopify/polaris-icons";
-import { categoryQuery } from "./CategoryQuery";
+import { categoryQuery } from "../queries/CategoryQuery";
 
 export default function CategoriesSection() {
   const { loading, error, data } = useQuery(categoryQuery);
@@ -11,7 +11,7 @@ export default function CategoriesSection() {
   const categories = data.categories;
   const items = categories.map(category => {
     return {
-      url: "charities",
+      url: "/charities/" + category.categoryId,
       label: category.description,
       icon: HomeMajorMonotone
     };
