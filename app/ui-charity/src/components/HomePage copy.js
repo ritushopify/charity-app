@@ -10,12 +10,12 @@ import {
   ResourceItem
 } from "@shopify/polaris";
 
-export default function PageMarkup() {
+export default function HomePage() {
   const resourceName = {
     singular: "Charity",
     plural: "Charities"
   };
-
+  console.log("in HomePage now");
   const charities = [
     {
       ein: "680259824",

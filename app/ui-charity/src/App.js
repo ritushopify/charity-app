@@ -1,7 +1,7 @@
 import React from "react";
 import { AppProvider } from "@shopify/polaris";
 import enTranslations from "@shopify/polaris/locales/en.json";
-import AppRoutes from "./Routes/AppRoutes";
+import MainPage from "./components/MainPage";
 
 export default function App() {
   const theme = {
@@ -18,7 +18,7 @@ export default function App() {
       accessibilityLabel: "Earth Logo"
     }
   };
-
+  console.log("in App.js");
   return (
     <AppProvider
       theme={theme}
@@ -31,7 +31,7 @@ export default function App() {
         }
       }}
     >
-      <AppRoutes />
+      {MainPage()}
     </AppProvider>
   );
 }

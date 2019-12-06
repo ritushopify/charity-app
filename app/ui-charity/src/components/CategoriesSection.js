@@ -13,7 +13,8 @@ export default function CategoriesSection() {
     return {
       url: "/charities/" + category.categoryId,
       label: category.description,
-      icon: HomeMajorMonotone
+      icon: HomeMajorMonotone,
+      exactMatch: true
     };
   });
   return <Navigation.Section separator title="Categories" items={items} />;

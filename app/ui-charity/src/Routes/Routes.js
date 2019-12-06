@@ -1,12 +1,20 @@
 import React from "react";
+import HomePage from "../components/HomePage";
+import Charities from "../components/Charities";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import ShowCharities from "../components/ShowCharities";
 
 function Routes() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/charities" render={() => <ShowCharities />} />
+        <Route exact path="/" render={() => <HomePage />} />
+        <Route
+          exact
+          path="/charities/:id"
+          render={props => {
+            return <Charities {...props} />;
+          }}
+        />
       </Switch>
     </BrowserRouter>
   );
