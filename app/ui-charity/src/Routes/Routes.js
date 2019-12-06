@@ -1,6 +1,6 @@
 import React from "react";
-import HomePage from "../components/HomePage";
-import Charities from "../components/Charities";
+import HomePage from "../components/HomePageTest";
+import ShowCharities from "../components/ShowCharities";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 function Routes() {
@@ -12,7 +12,7 @@ function Routes() {
           exact
           path="/charities/:id"
           render={props => {
-            return <Charities {...props} />;
+            return <ShowCharities {...props} />;
           }}
         />
       </Switch>
