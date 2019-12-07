@@ -1,7 +1,7 @@
 import gql from "graphql-tag";
 
 const charityQuery = gql`
-  query Charities($apiId: String) {
+  query charitiesForCategory($apiId: String!) {
     charitiesForCategory(apiId: $apiId) {
       employerId
       name
