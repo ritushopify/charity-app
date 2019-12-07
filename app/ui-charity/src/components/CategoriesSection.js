@@ -10,12 +10,11 @@ export default function CategoriesSection() {
   if (error) return `Error! ${error.message}`;
   const categories = data.categories;
   const items = categories.map(category => {
-    console.log("In CategoriesSection category api Id is " + category.apiId);
     return {
       url: "/charities/" + category.apiId,
       label: category.description,
       icon: HomeMajorMonotone,
-      exactMatch: true
+      exactMatch: false
     };
   });
   return <Navigation.Section separator title="Categories" items={items} />;

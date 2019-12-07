@@ -10,7 +10,7 @@ function Routes() {
         <Route exact path="/" render={() => <HomePage />} />
         <Route
           exact
-          path="/charities/:id"
+          path="/charities/:apiId"
           render={props => {
             return <ShowCharities {...props} />;
           }}
