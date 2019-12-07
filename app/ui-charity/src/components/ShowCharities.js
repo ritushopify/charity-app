@@ -19,7 +19,7 @@ export default class ShowCharities extends React.Component {
     //   return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
     // }
     const charityQuery = gql`
-      query CharitiesForCategory($apiId: String) {
+      query CharitiesForCategory($apiId: String!) {
         charitiesForCategory(apiId: $apiId) {
           employerId
           name
@@ -28,28 +28,28 @@ export default class ShowCharities extends React.Component {
       }
     `;
 
-    const Result = ({ apiId }) => (
+    return (
       <Query query={charityQuery} variables={{ apiId: apiId }}>
         {({ loading, error, data }) => {
           if (loading) return "Loading...";
           if (error) return `Error! ${error.message}`;
-          console.log("query returned data: " + data);
-          data.charities.map(charity => {
+          {
+            console.log("query returned charity data: " + data);
+          }
+          const items = data.charitiesForCategory.map(charity => {
             return {
               id: charity.employerId,
               name: charity.name,
               url: charity.url
             };
           });
+          return (
+            <Page title={"Category Selected: " + apiId}>
+              <Card>{console.log("here are the charity items" + items)}</Card>
+            </Page>
+          );
         }}
       </Query>
     );
-    return (
-      <Page title={"Category Selected: " + apiId}>
-        <Card>{console.log("here are the charity items" + Result)}</Card>
-      </Page>
-    );
   }
 }
-//  );
-// return Result;
