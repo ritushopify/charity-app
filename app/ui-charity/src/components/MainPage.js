@@ -7,7 +7,7 @@ import Routes from "../routes/Routes";
 import { BrowserRouter } from "react-router-dom";
 
 export default function MainPage() {
-  console.log("In Main Page now");
+  console.log("In MainPage now");
   return (
     <BrowserRouter>
       <Frame topBar={TopBarMarkup()} navigation={NavigationMarkup()}>

@@ -13,8 +13,9 @@ import getCharities from "./GetCharities";
 
 export default class ShowCharities extends React.Component {
   render() {
-    console.log("in charities now");
+    console.log("in ShowCharities now");
     const id = this.props.match.params.id;
+    console.log("id in ShowCharities is " + id);
     const allCharities = getCharities(id);
     const resourceName = {
       singular: "Charity",

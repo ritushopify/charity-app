@@ -1,12 +1,12 @@
 import gql from "graphql-tag";
 
-const categoryQuery = gql`
-  query {
-    categories {
-      categoryId
-      description
+const charityQuery = gql`
+  query Charities($apiId: String) {
+    charitiesForCategory(apiId: $apiId) {
+      name
+      url
     }
   }
 `;
 
-export { categoryQuery };
+export { charityQuery };

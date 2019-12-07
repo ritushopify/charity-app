@@ -1,0 +1,53 @@
+Arguments: 
+  /Users/ritu.sikka/.nvm/versions/node/v10.11.0/bin/node /Users/ritu.sikka/.dev/yarn/1.12.3/bin/yarn.js check --integrity
+
+PATH: 
+  /Users/ritu.sikka/.nvm/versions/node/v10.11.0/bin:/Users/ritu.sikka/.dev/yarn/1.12.3/bin:/Users/ritu.sikka/.gem/ruby/2.6.3/bin:/opt/rubies/2.6.3/lib/ruby/gems/2.6.0/bin:/opt/rubies/2.6.3/bin:/Users/ritu.sikka/.nvm/versions/node/v10.11.0/bin:/Users/ritu.sikka/.dev/yarn/1.12.3/bin:/Users/ritu.sikka/.gem/ruby/2.6.3/bin/rufo:/usr/local/opt/node@8/bin:/usr/local/share/chruby:/Users/ritu.sikka/.nix-profile/bin:/opt/dev/bin/user:/Users/ritu.sikka/.nix-profile/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.12.3
+
+Node version: 
+  10.11.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  TypeError: Cannot read property '@rails/actioncable@^6.0.0' of undefined
+      at /Users/ritu.sikka/.dev/yarn/1.12.3/lib/cli.js:47143:25
+      at Array.filter (<anonymous>)
+      at InstallationIntegrityChecker.<anonymous> (/Users/ritu.sikka/.dev/yarn/1.12.3/lib/cli.js:47142:38)
+      at Generator.next (<anonymous>)
+      at step (/Users/ritu.sikka/.dev/yarn/1.12.3/lib/cli.js:304:30)
+      at /Users/ritu.sikka/.dev/yarn/1.12.3/lib/cli.js:322:14
+      at new Promise (<anonymous>)
+      at new F (/Users/ritu.sikka/.dev/yarn/1.12.3/lib/cli.js:5228:28)
+      at InstallationIntegrityChecker.<anonymous> (/Users/ritu.sikka/.dev/yarn/1.12.3/lib/cli.js:301:12)
+      at InstallationIntegrityChecker.check (/Users/ritu.sikka/.dev/yarn/1.12.3/lib/cli.js:47191:21)
+
+npm manifest: 
+  {
+    "name": "charity_app",
+    "private": true,
+    "dependencies": {
+      "@rails/actioncable": "^6.0.0",
+      "@rails/activestorage": "^6.0.0",
+      "@rails/ujs": "^6.0.0",
+      "@rails/webpacker": "^4.2.0",
+      "apollo-boost": "^0.4.4",
+      "graphql": "^14.5.8",
+      "react-apollo": "^3.1.3",
+      "turbolinks": "^5.2.0"
+    },
+    "version": "0.1.0",
+    "devDependencies": {
+      "webpack-dev-server": "^3.9.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

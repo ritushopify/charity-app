@@ -8,16 +8,16 @@ module Types
       Category.all
     end
 
-    field :all_charities, [Types::CharityType], null: false
-    def all_charities
+    field :charities, [Types::CharityType], null: false
+    def charities
       Charity.all
     end
 
     field :charities_for_category, [Types::CharityType], null: true do
-      argument :cat_id, Int, required: true
+      argument :api_id, String, required: true
     end
-    def charities_for_category(cat_id:)
-      Charity.where(category_id: cat_id)
+    def charities_for_category(api_id:)
+      Charity.where(category_api_id: api_id)
     end
    
     # TODO: remove me
