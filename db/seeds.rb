@@ -14,41 +14,43 @@ Category.destroy_all
 
 categories = [
   { "categoryId": "C", "categoryDesc": "Environmental Quality, Protection and Beautification" }, 
-  { "categoryId": "D", "categoryDesc": "Animal-Related" }, 
-  { "categoryId": "F", "categoryDesc": "Mental Health, Crisis Intervention" }, 
-  { "categoryId": "H", "categoryDesc": "Medical Research" }, 
-  { "categoryId": "K", "categoryDesc": "Food, Agriculture and Nutrition" }, 
-  { "categoryId": "L", "categoryDesc": "Housing, Shelter" }, 
-  { "categoryId": "O", "categoryDesc": "Youth Development" }, 
-  { "categoryId": "Q", "categoryDesc": "International, Foreign Affairs and National Security" },
-  { "categoryId": "U", "categoryDesc": "Science and Technology Research Institutes, Services" },
+  # { "categoryId": "D", "categoryDesc": "Animal-Related" }, 
+  # { "categoryId": "F", "categoryDesc": "Mental Health, Crisis Intervention" }, 
+  # { "categoryId": "H", "categoryDesc": "Medical Research" }, 
+  # { "categoryId": "K", "categoryDesc": "Food, Agriculture and Nutrition" }, 
+  # { "categoryId": "L", "categoryDesc": "Housing, Shelter" }, 
+  # { "categoryId": "O", "categoryDesc": "Youth Development" }, 
+  # { "categoryId": "Q", "categoryDesc": "International, Foreign Affairs and National Security" },
+  # { "categoryId": "U", "categoryDesc": "Science and Technology Research Institutes, Services" },
   { "categoryId": "X", "categoryDesc": "Religion-Related, Spiritual Development" }, 
 ]
-category_list = categories.map do |category_hash|
-  Category.create(category_id: category_hash[:categoryId], description: category_hash[:categoryDesc])
-end
 
-category = category_list[0]
-
+# user_key is needed for the calls to the external API we will be making
 user_key = Rails.application.config.user_key
 
-# user_key="767217d273a5d0194a2a611a378fc990"
+# Create categories and the charities for each category
+categories.each do |category_hash|
+  category = Category.create(
+    api_id: category_hash[:categoryId], 
+    description: category_hash[:categoryDesc]
+  )
+  # Get all the charities for this category from the orghunter.com REST API
+  charities_response = RestClient.post 'http://data.orghunter.com/v1/charitysearch',
+    {"user_key" => user_key, "category" => category.api_id}
 
-charities_response = RestClient.post 'http://data.orghunter.com/v1/charitysearch',
-    {"user_key" => user_key, "category" => 'C'}
-
-charities_hash = JSON.parse(charities_response.body)
-charities_array = charities_hash["data"]
-
-charities = charities_array.map do |attributeHash|
-Charity.create(
-  category_id: attributeHash["categoryId"],
-  employer_id: attributeHash["ein"],
-  name: attributeHash["charityName"],
-  url: attributeHash["url"],
-  city: attributeHash["city"],
-  state: attributeHash["state"]
-) 
+  "Process the charities response from the REST query"
+  charities_hash = JSON.parse(charities_response.body)
+  charities_array = charities_hash["data"]
+  charities = charities_array.map do |attributeHash|
+    Charity.create(
+      category_api_id: category.api_id,
+      employer_id: attributeHash["ein"],
+      name: attributeHash["charityName"],
+      url: attributeHash["url"],
+      city: attributeHash["city"],
+      state: attributeHash["state"]
+    ) 
+  end
+  category.charities << charities
 end
 
-category.charities << charities

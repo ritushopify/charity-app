@@ -13,14 +13,15 @@
 ActiveRecord::Schema.define(version: 2019_11_22_162834) do
 
   create_table "categories", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
-    t.string "category_id"
+    t.string "api_id"
     t.string "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "charities", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
-    t.bigint "category_id", null: false
+    t.bigint "category_id"
+    t.string "category_api_id", null: false
     t.string "employer_id"
     t.string "name"
     t.string "url"
