@@ -14,14 +14,14 @@ Category.destroy_all
 
 categories = [
   { "categoryId": "C", "categoryDesc": "Environmental Quality, Protection and Beautification" }, 
-  # { "categoryId": "D", "categoryDesc": "Animal-Related" }, 
-  # { "categoryId": "F", "categoryDesc": "Mental Health, Crisis Intervention" }, 
-  # { "categoryId": "H", "categoryDesc": "Medical Research" }, 
-  # { "categoryId": "K", "categoryDesc": "Food, Agriculture and Nutrition" }, 
-  # { "categoryId": "L", "categoryDesc": "Housing, Shelter" }, 
-  # { "categoryId": "O", "categoryDesc": "Youth Development" }, 
-  # { "categoryId": "Q", "categoryDesc": "International, Foreign Affairs and National Security" },
-  # { "categoryId": "U", "categoryDesc": "Science and Technology Research Institutes, Services" },
+  { "categoryId": "D", "categoryDesc": "Animal-Related" }, 
+  { "categoryId": "F", "categoryDesc": "Mental Health, Crisis Intervention" }, 
+  { "categoryId": "H", "categoryDesc": "Medical Research" }, 
+  { "categoryId": "K", "categoryDesc": "Food, Agriculture and Nutrition" }, 
+  { "categoryId": "L", "categoryDesc": "Housing, Shelter" }, 
+  { "categoryId": "O", "categoryDesc": "Youth Development" }, 
+  { "categoryId": "Q", "categoryDesc": "International, Foreign Affairs and National Security" },
+  { "categoryId": "U", "categoryDesc": "Science and Technology Research Institutes, Services" },
   { "categoryId": "X", "categoryDesc": "Religion-Related, Spiritual Development" }, 
 ]
 
