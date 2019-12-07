@@ -19,28 +19,3 @@ export default function getCharityItems(apiId) {
     };
   });
 }
-//   console.log("id in getCharities is " + id);
-//   console.log("type of id is " + typeof id);
-//   // const QUERY_CHARITIES = gql`
-//   //   query GetCharities($apiId: String) {
-//   //     charitiesForCategory(apiId: apiId) {
-//   //       name
-//   //       url
-//   //       city
-//   //       state
-//   //     }
-//   //   }
-//   // `;
-
-//   return (
-//     <Query query={charityQuery} variables={id}>
-//       {({ loading, error, data }) => {
-//         if (loading) return "Loading...";
-//         if (error) return `Error! ${error.message}`;
-//         console.log("In GetCharities, made it to end of query");
-//         console.log("In GetCharities, the charities are " + data.charities);
-//         return data.charities;
-//       }}
-//     </Query>
-//   );
-// }
