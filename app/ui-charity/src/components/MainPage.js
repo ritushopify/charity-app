@@ -3,7 +3,7 @@ import { Frame } from "@shopify/polaris";
 
 import TopBarMarkup from "./TopBarMarkup";
 import NavigationMarkup from "./NavigationMarkup";
-import Routes from "../routes/Routes";
+import FrameRoutes from "../routes/FrameRoutes";
 import { BrowserRouter } from "react-router-dom";
 
 export default function MainPage() {
@@ -11,7 +11,7 @@ export default function MainPage() {
   return (
     <BrowserRouter>
       <Frame topBar={TopBarMarkup()} navigation={NavigationMarkup()}>
-        <Routes />
+        <FrameRoutes />
       </Frame>
     </BrowserRouter>
   );
