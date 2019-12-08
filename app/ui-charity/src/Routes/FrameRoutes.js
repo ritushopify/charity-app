@@ -1,20 +1,19 @@
 import React from "react";
-import StartPage from "../components/Starting/StartPage";
-import HomePage from "../components/HomePageTest";
-import MainPage from "../components/MainPage";
-import ShowCharities from "../components/ShowCharities";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
+
+import HomeSection from "../components/HomeSection";
+import CharitiesSection from "../components/charities/CharitiesSection";
 
 function FrameRoutes() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/charities" render={() => <HomePage />} />
+        <Route exact path="/" render={() => <HomeSection />} />
         <Route
           exact
           path="/charities/:apiId"
           render={props => {
-            return <ShowCharities {...props} />;
+            return <CharitiesSection {...props} />;
           }}
         />
       </Switch>

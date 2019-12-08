@@ -10,13 +10,13 @@ import {
   // ResourceItem
 } from "@shopify/polaris";
 
-export default class HomePage extends React.Component {
+export default class HomeSection extends React.Component {
   render() {
-    console.log("In HomePageTest now");
+    console.log("In home page now");
     return (
-      <Page title="Test Page">
+      <Page title="Test Home Page">
         <Layout>
-          <Card title="Hello" />
+          <Card title="Hello from Home" />
         </Layout>
       </Page>
     );

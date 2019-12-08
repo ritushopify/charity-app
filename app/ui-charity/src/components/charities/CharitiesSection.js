@@ -10,20 +10,17 @@ import {
   ResourceItem
 } from "@shopify/polaris";
 import { Query } from "react-apollo";
-import { charityQuery } from "../queries/CharityQuery";
-import gql from "graphql-tag";
-export default class ShowCharities extends React.Component {
+import { charityQuery } from "../../queries/CharityQuery";
+
+export default class CharitiesSection extends React.Component {
   render() {
     const apiId = this.props.match.params.apiId;
     const resourceName = {
       singular: "Charity",
       plural: "Charities"
     };
-    function capitalize(word) {
-      return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
-    }
     function renderCharity(charity) {
-      const { id, name, url, city, state } = charity;
+      const { id, name, url } = charity;
       const media = <Avatar customer size="medium" name={name} />;
 
       return (
@@ -44,10 +41,10 @@ export default class ShowCharities extends React.Component {
         {({ loading, error, data }) => {
           if (loading) return "Loading...";
           if (error) return `Error! ${error.message}`;
-          {
-            console.log("query returned charity data: " + data);
-          }
-          const items = data.charitiesForCategory.map(charity => {
+          console.log("query returned charity data: " + data);
+          const charities = data.charitiesForCategory;
+          const categoryName = charities[0].categoryName;
+          const items = charities.map(charity => {
             return {
               id: charity.employerId,
               name: charity.name,
@@ -55,40 +52,31 @@ export default class ShowCharities extends React.Component {
             };
           });
           return (
-            <Page title="Charities for Category X">
+            <Page
+              title={"Charities for " + categoryName}
+              subtitle={"Get more information on any of these charities below."}
+            >
               <Layout>
-                <Layout.AnnotatedSection
-                  title="Get more information on these charities."
-                  description="Possible subtitle"
-                >
-                  <Card>
+                <Card>
                     <ResourceList
                       items={items}
                       renderItem={renderCharity}
                       resourceName={resourceName}
                     />
-                  </Card>
-                </Layout.AnnotatedSection>
-                <Layout.AnnotatedSection
-                  title="Pacific Coast Fish Wildife and Wetlands"
-                  description="Possible Description"
-                >
-                  <Card>
+                 <Card>
                     <FormLayout>
                       <TextField
-                        label="Identification Number"
-                        disabled
-                        value={"680259824"}
+                        label="Enter Occasion"
+
+                        value={"Birthday"}
                       />
                       <TextField
-                        type="Location"
-                        disabled
-                        value={"Arcata, California"}
+                        type="Enter message"
+                        value={"I know how much you care about ..."}
                       />
                     </FormLayout>
                   </Card>
-                </Layout.AnnotatedSection>
-              </Layout>
+                </Layout>
             </Page>
           );
         }}

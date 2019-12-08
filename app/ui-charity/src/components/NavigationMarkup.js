@@ -6,7 +6,7 @@ import {
   // OrdersMajorTwotone
 } from "@shopify/polaris-icons";
 
-import CategoriesSection from "./CategoriesSection";
+import CategoriesSection from "./categories/CategoriesSection";
 
 export default function NavigationMarkup() {
   return (

@@ -6,6 +6,7 @@ const charityQuery = gql`
       employerId
       name
       url
+      categoryName
     }
   }
 `;

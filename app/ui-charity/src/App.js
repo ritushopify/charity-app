@@ -1,8 +1,7 @@
 import React from "react";
 import { AppProvider } from "@shopify/polaris";
 import enTranslations from "@shopify/polaris/locales/en.json";
-import { BrowserRouter } from "react-router-dom";
-import Routes from "./routes/Routes";
+import MainPage from "./components/MainPage";
 
 export default function App() {
   const theme = {
@@ -32,9 +31,7 @@ export default function App() {
         }
       }}
     >
-      <BrowserRouter>
-        <Routes />
-      </BrowserRouter>
+      {MainPage()}
     </AppProvider>
   );
 }

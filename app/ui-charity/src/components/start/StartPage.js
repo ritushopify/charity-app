@@ -3,6 +3,7 @@ import { Layout, Button, DisplayText, Badge, Page } from "@shopify/polaris";
 import IntroBlurb from "./IntroBlurb";
 import GiveGiftBlurb from "./GiveGiftBlurb";
 import ImageSection from "./ImageSection";
+import MainPage from "../MainPage";
 
 const titleImg = require("../../assets/mainTitle.png");
 
@@ -34,8 +35,8 @@ export default function StartPage() {
               </DisplayText>
               <Button
                 accessiblityLabel="Charities"
-                url="/charities"
                 size="large"
+                url="/charities"
               >
                 Start
               </Button>

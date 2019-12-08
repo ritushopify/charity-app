@@ -2,7 +2,7 @@ import React from "react";
 import { useQuery } from "@apollo/react-hooks";
 import { Navigation } from "@shopify/polaris";
 import { HomeMajorMonotone } from "@shopify/polaris-icons";
-import { categoryQuery } from "../queries/CategoryQuery";
+import { categoryQuery } from "../../queries/CategoryQuery";
 
 export default function CategoriesSection() {
   const { loading, error, data } = useQuery(categoryQuery);
@@ -18,5 +18,6 @@ export default function CategoriesSection() {
       exactMatch: false
     };
   });
+  console.log("categories are " + categories);
   return <Navigation.Section separator title="Categories" items={items} />;
 }
