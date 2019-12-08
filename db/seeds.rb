@@ -48,7 +48,8 @@ categories.each do |category_hash|
       name: attributeHash["charityName"],
       url: attributeHash["url"],
       city: attributeHash["city"],
-      state: attributeHash["state"]
+      state: attributeHash["state"],
+      category_name: attributeHash["category"]
     ) 
   end
   category.charities << charities
