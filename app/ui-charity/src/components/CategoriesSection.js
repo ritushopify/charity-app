@@ -8,9 +8,7 @@ export default function CategoriesSection() {
   const { loading, error, data } = useQuery(categoryQuery);
   if (loading) return "Loading...";
   if (error) return `Error! ${error.message}`;
-  {
-    console.log("in categories, data was " + data);
-  }
+
   const categories = data.categories;
   const items = categories.map(category => {
     return {

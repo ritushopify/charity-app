@@ -1,7 +1,7 @@
 import React from "react";
 import { AppProvider } from "@shopify/polaris";
 import enTranslations from "@shopify/polaris/locales/en.json";
-import MainPage from "./components/MainPage";
+import StartPage from "./components/Starting/StartPage";
 
 export default function App() {
   const theme = {
@@ -31,7 +31,7 @@ export default function App() {
         }
       }}
     >
-      {MainPage()}
+      <StartPage />
     </AppProvider>
   );
 }
