@@ -2,8 +2,8 @@ import React from "react";
 import {
   Avatar,
   Page,
-  Layout,
   Card,
+  Layout,
   FormLayout,
   TextField,
   ResourceList,
@@ -54,29 +54,32 @@ export default class CharitiesSection extends React.Component {
           return (
             <Page
               title={"Charities for " + categoryName}
-              subtitle={"Get more information on any of these charities below."}
+              subtitle={"Click below to learn more about these charities."}
             >
               <Layout>
-                <Card>
+                <Layout.Section>
+                  <Card>
                     <ResourceList
                       items={items}
                       renderItem={renderCharity}
                       resourceName={resourceName}
                     />
-                 <Card>
+                  </Card>
+                </Layout.Section>
+                <Layout.Section secondary>
+                  <Layout.Section>
+                    This charity is blah bblah - go to their website...
+                    <Layout.Section></Layout.Section>
                     <FormLayout>
-                      <TextField
-                        label="Enter Occasion"
-
-                        value={"Birthday"}
-                      />
+                      <TextField label="Enter Occasion" value={"Birthday"} />
                       <TextField
                         type="Enter message"
                         value={"I know how much you care about ..."}
                       />
                     </FormLayout>
-                  </Card>
-                </Layout>
+                  </Layout.Section>
+                </Layout.Section>
+              </Layout>
             </Page>
           );
         }}
