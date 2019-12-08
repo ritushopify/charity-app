@@ -18,7 +18,6 @@ export default function App() {
       accessibilityLabel: "Earth Logo"
     }
   };
-  console.log("in App.js");
   return (
     <AppProvider
       theme={theme}

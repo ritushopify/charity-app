@@ -18,6 +18,6 @@ export default function CategoriesSection() {
       exactMatch: false
     };
   });
-  console.log("categories are " + categories);
+
   return <Navigation.Section separator title="Categories" items={items} />;
 }

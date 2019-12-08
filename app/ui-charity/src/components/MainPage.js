@@ -7,7 +7,6 @@ import NavigationMarkup from "./NavigationMarkup";
 import FrameRoutes from "../routes/FrameRoutes";
 
 export default function MainPage() {
-  console.log("In MainPage now");
   return (
     <BrowserRouter>
       <Frame topBar={TopBarMarkup()} navigation={NavigationMarkup()}>
