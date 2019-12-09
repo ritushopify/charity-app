@@ -12,6 +12,9 @@ import { Query } from "react-apollo";
 import { charityQuery } from "../../queries/CharityQuery";
 import showCharityItem from "./ShowCharityItem";
 
+function selectionChanged(props) {
+  console.log("props is " + JSON.stringify(props));
+}
 export default class CharitiesSection extends React.Component {
   render() {
     const apiId = this.props.match.params.apiId;
@@ -37,9 +40,13 @@ export default class CharitiesSection extends React.Component {
               <Layout>
                 <Layout.Section>
                   <Card>
+                    {console.log(
+                      "props in card is" + JSON.stringify(this.props)
+                    )}
                     <ResourceList
                       items={items}
                       renderItem={showCharityItem}
+                      onSelectionChange={selectionChanged(this.props)}
                       resourceName={{
                         singular: "Charity",
                         plural: "Charities"
