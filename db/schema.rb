@@ -10,7 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_12_08_164335) do
+ActiveRecord::Schema.define(version: 2019_12_09_183506) do
+
+  create_table "cards", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
+    t.integer "occasion"
+    t.string "blurb"
+    t.string "message"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.bigint "person_id"
+    t.index ["person_id"], name: "index_cards_on_person_id"
+  end
 
   create_table "categories", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.string "api_id"
@@ -33,5 +43,28 @@ ActiveRecord::Schema.define(version: 2019_12_08_164335) do
     t.index ["category_id"], name: "index_charities_on_category_id"
   end
 
+  create_table "donations", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
+    t.integer "amount"
+    t.bigint "card_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.bigint "person_id"
+    t.bigint "charity_id", null: false
+    t.index ["card_id"], name: "index_donations_on_card_id"
+    t.index ["charity_id"], name: "index_donations_on_charity_id"
+    t.index ["person_id"], name: "index_donations_on_person_id"
+  end
+
+  create_table "people", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
+    t.string "name"
+    t.string "email"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  add_foreign_key "cards", "people"
   add_foreign_key "charities", "categories"
+  add_foreign_key "donations", "cards"
+  add_foreign_key "donations", "charities"
+  add_foreign_key "donations", "people"
 end
