@@ -34127,3 +34127,106 @@ FOREIGN KEY (`charity_id`)
   [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
   [1m[36mDonation Create (1.1ms)[0m  [1m[32mINSERT INTO `donations` (`amount`, `card_id`, `created_at`, `updated_at`, `person_id`, `charity_id`) VALUES (150, 18, '2019-12-09 19:52:25.928010', '2019-12-09 19:52:25.928010', 22, 2241)[0m
   [1m[35m (5.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (15.9ms)[0m  [1m[35mDROP DATABASE IF EXISTS `charity_app_test`[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE DATABASE `charity_app_test` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `cards` CASCADE[0m
+  [1m[35m (9.0ms)[0m  [1m[35mCREATE TABLE `cards` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `occasion` int, `blurb` varchar(255), `message` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `person_id` bigint,  INDEX `index_cards_on_person_id`  (`person_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4[0m
+  [1m[35m (1.6ms)[0m  [1m[35mDROP TABLE IF EXISTS `categories` CASCADE[0m
+  [1m[35m (7.7ms)[0m  [1m[35mCREATE TABLE `categories` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `api_id` varchar(255), `description` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4[0m
+  [1m[35m (1.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `charities` CASCADE[0m
+  [1m[35m (8.7ms)[0m  [1m[35mCREATE TABLE `charities` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `category_id` bigint, `category_api_id` varchar(255) NOT NULL, `employer_id` varchar(255), `name` varchar(255), `url` varchar(255), `city` varchar(255), `state` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `category_name` varchar(255),  INDEX `index_charities_on_category_id`  (`category_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4[0m
+  [1m[35m (1.5ms)[0m  [1m[35mDROP TABLE IF EXISTS `donations` CASCADE[0m
+  [1m[35m (11.4ms)[0m  [1m[35mCREATE TABLE `donations` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `amount` int, `card_id` bigint NOT NULL, `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `person_id` bigint, `charity_id` bigint NOT NULL,  INDEX `index_donations_on_card_id`  (`card_id`),  INDEX `index_donations_on_charity_id`  (`charity_id`),  INDEX `index_donations_on_person_id`  (`person_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4[0m
+  [1m[35m (1.6ms)[0m  [1m[35mDROP TABLE IF EXISTS `people` CASCADE[0m
+  [1m[35m (8.0ms)[0m  [1m[35mCREATE TABLE `people` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `email` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4[0m
+  [1m[35m (20.3ms)[0m  [1m[35mALTER TABLE `cards` ADD CONSTRAINT `fk_rails_1e8f1e3c88`
+FOREIGN KEY (`person_id`)
+  REFERENCES `people` (`id`)
+[0m
+  [1m[35m (21.4ms)[0m  [1m[35mALTER TABLE `charities` ADD CONSTRAINT `fk_rails_9b116380a2`
+FOREIGN KEY (`category_id`)
+  REFERENCES `categories` (`id`)
+[0m
+  [1m[35m (35.9ms)[0m  [1m[35mALTER TABLE `donations` ADD CONSTRAINT `fk_rails_43493d58a7`
+FOREIGN KEY (`card_id`)
+  REFERENCES `cards` (`id`)
+[0m
+  [1m[35m (25.5ms)[0m  [1m[35mALTER TABLE `donations` ADD CONSTRAINT `fk_rails_e24057f6ad`
+FOREIGN KEY (`charity_id`)
+  REFERENCES `charities` (`id`)
+[0m
+  [1m[35m (20.0ms)[0m  [1m[35mALTER TABLE `donations` ADD CONSTRAINT `fk_rails_776e99a61e`
+FOREIGN KEY (`person_id`)
+  REFERENCES `people` (`id`)
+[0m
+  [1m[35m (7.6ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (2.5ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES (20191209183506)[0m
+  [1m[35m (3.7ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES
+(20191208162714),
+(20191208164335),
+(20191209003554),
+(20191209005015),
+(20191209005512),
+(20191209010616),
+(20191209170511),
+(20191209180755),
+(20191209180906),
+(20191209181505),
+(20191209183324);
+
+[0m
+  [1m[35m (11.0ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.2ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2019-12-09 20:20:44.385345', '2019-12-09 20:20:44.385345')[0m
+  [1m[35m (3.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.6ms)[0m  [1m[33mUPDATE `ar_internal_metadata` SET `ar_internal_metadata`.`value` = 'test', `ar_internal_metadata`.`updated_at` = '2019-12-09 20:20:44.396824' WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1' LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('schema_sha1', '8331177261dc569687f024828a5c7de0692840b1', '2019-12-09 20:20:44.405669', '2019-12-09 20:20:44.405669')[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 192.168.64.86 at 2019-12-09 16:16:47 -0500
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/ritu.sikka/.gem/ruby/2.6.3/gems/railties-6.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ritu.sikka/.gem/ruby/2.6.3/gems/railties-6.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.5ms | Allocations: 318)
+Completed 200 OK in 24ms (Views: 13.9ms | ActiveRecord: 0.0ms | Allocations: 1822)
+
+
+[StatsD] CharityApp.request_time:327|d|#controller:rails/welcome,action:index,request_method:GET,request_format:text/html,response_code:200,response_type:2xx,environment:development
+[StatsD] CharityApp.request_time:0|d|#response_code:304,response_type:3xx,environment:development
+Started GET "/" for 192.168.64.86 at 2019-12-09 16:16:57 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/ritu.sikka/.gem/ruby/2.6.3/gems/railties-6.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ritu.sikka/.gem/ruby/2.6.3/gems/railties-6.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 8.3ms | Allocations: 192)
+Completed 200 OK in 12ms (Views: 9.7ms | ActiveRecord: 0.0ms | Allocations: 898)
+
+
+[StatsD] CharityApp.request_time:29|d|#controller:rails/welcome,action:index,request_method:GET,request_format:text/html,response_code:304,response_type:3xx,environment:development
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT GET_LOCK('4249631156124086040', 0)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to ChangeCategoryIdToApiIdInCategory (20191209214212)
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('4249631156124086040')[0m
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT GET_LOCK('4249631156124086040', 0)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT RELEASE_LOCK('4249631156124086040')[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m

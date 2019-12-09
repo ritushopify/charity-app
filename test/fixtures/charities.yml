@@ -7,6 +7,7 @@ one:
   url: MyString
   city: MyString
   state: MyString
+  category_api_id: MyString
 
 two:
   category: two
@@ -15,3 +16,4 @@ two:
   url: MyString
   city: MyString
   state: MyString
+  category_api_id: MyString

@@ -2,10 +2,10 @@
 
 one:
   amount: 1
-  charity_name: MyString
   card: one
+  charity: one
 
 two:
   amount: 1
-  charity_name: MyString
   card: two
+  charity: two
