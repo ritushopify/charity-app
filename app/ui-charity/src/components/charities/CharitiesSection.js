@@ -1,16 +1,9 @@
 import React from "react";
-import {
-  Page,
-  Card,
-  Layout,
-  FormLayout,
-  TextField,
-  ResourceList,
-  TextContainer
-} from "@shopify/polaris";
+import { Page, Card, Layout, ResourceList } from "@shopify/polaris";
 import { Query } from "react-apollo";
 import { charityQuery } from "../../queries/CharityQuery";
-import showCharityItem from "./ShowCharityItem";
+import CharityItem from "./CharityItem";
+import CharityDetailsSection from "./CharityDetailsSection";
 
 function selectionChanged(props) {
   console.log("props is " + JSON.stringify(props));
@@ -45,7 +38,7 @@ export default class CharitiesSection extends React.Component {
                     )}
                     <ResourceList
                       items={items}
-                      renderItem={showCharityItem}
+                      renderItem={CharityItem}
                       onSelectionChange={selectionChanged(this.props)}
                       resourceName={{
                         singular: "Charity",
@@ -54,20 +47,7 @@ export default class CharitiesSection extends React.Component {
                     />
                   </Card>
                 </Layout.Section>
-                <Layout.Section secondary>
-                  <Layout.Section>
-                    This charity is blah bblah - go to their website...
-                  </Layout.Section>
-                  <Layout.Section>
-                    <FormLayout>
-                      <TextField label="Enter Occasion" value={"Birthday"} />
-                      <TextContainer
-                        type="Enter message"
-                        value={"I know how much you care about ..."}
-                      />
-                    </FormLayout>
-                  </Layout.Section>
-                </Layout.Section>
+                <CharityDetailsSection />
               </Layout>
             </Page>
           );

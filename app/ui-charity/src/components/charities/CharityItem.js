@@ -1,7 +1,7 @@
 import React from "react";
 import { ResourceItem, Avatar } from "@shopify/polaris";
 
-export default function showCharityItem(charity) {
+export default function CharityItem(charity) {
   const { id, name, url } = charity;
   const media = <Avatar customer size="medium" name={name} />;
 
