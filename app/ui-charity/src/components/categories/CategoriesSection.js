@@ -19,5 +19,7 @@ export default function CategoriesSection() {
     };
   });
 
-  return <Navigation.Section separator title="Categories" items={items} />;
+  return (
+    <Navigation.Section separator title="Charity Category" items={items} />
+  );
 }

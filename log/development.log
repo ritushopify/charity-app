@@ -34230,3 +34230,329 @@ Migrating to ChangeCategoryIdToApiIdInCategory (20191209214212)
   [1m[35m (0.5ms)[0m  [1m[34mSELECT RELEASE_LOCK('4249631156124086040')[0m
   [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
   [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+[StatsD] CharityApp.request_time:4|d|#response_code:200,response_type:2xx,environment:development
+[StatsD] CharityApp.request_time:4|d|#response_code:200,response_type:2xx,environment:development
+Started POST "/graphql" for 192.168.64.86 at 2019-12-10 08:34:28 -0500
+Started POST "/graphql" for 192.168.64.86 at 2019-12-10 08:34:28 -0500
+  [1m[35m (8.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (10.1ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  categories {\n    apiId\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  categories {\n    apiId\n    description\n    __typename\n  }\n}\n"}}
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>"charitiesForCategory", "variables"=>{"apiId"=>"C"}, "query"=>"query charitiesForCategory($apiId: String!) {\n  charitiesForCategory(apiId: $apiId) {\n    employerId\n    name\n    url\n    categoryName\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>"charitiesForCategory", "variables"=>{"apiId"=>"C"}, "query"=>"query charitiesForCategory($apiId: String!) {\n  charitiesForCategory(apiId: $apiId) {\n    employerId\n    name\n    url\n    categoryName\n    __typename\n  }\n}\n"}}
+  [1m[36mCategory Load (5.7ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  ↳ app/controllers/graphql_controller.rb:15:in `execute'
+  [1m[36mCharity Load (2.0ms)[0m  [1m[34mSELECT `charities`.* FROM `charities` WHERE `charities`.`category_api_id` = 'C'[0m
+  ↳ app/controllers/graphql_controller.rb:15:in `execute'
+Completed 200 OK in 45ms (Views: 1.4ms | ActiveRecord: 10.5ms | Allocations: 21571)
+
+
+[StatsD] CharityApp.request_time:575|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+[StatsD] CharityApp.request_content_length:119|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+Completed 200 OK in 53ms (Views: 0.7ms | ActiveRecord: 4.3ms | Allocations: 31038)
+
+
+[StatsD] CharityApp.request_time:515|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+[StatsD] CharityApp.request_content_length:242|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+Started POST "/graphql" for 192.168.64.86 at 2019-12-10 08:34:44 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  categories {\n    apiId\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  categories {\n    apiId\n    description\n    __typename\n  }\n}\n"}}
+  [1m[36mCategory Load (1.7ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  ↳ app/controllers/graphql_controller.rb:15:in `execute'
+Completed 200 OK in 11ms (Views: 0.7ms | ActiveRecord: 1.7ms | Allocations: 2802)
+
+
+[StatsD] CharityApp.request_time:46|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+[StatsD] CharityApp.request_content_length:119|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+Started POST "/graphql" for 192.168.64.86 at 2019-12-10 08:35:51 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  categories {\n    apiId\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  categories {\n    apiId\n    description\n    __typename\n  }\n}\n"}}
+  [1m[36mCategory Load (4.6ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  ↳ app/controllers/graphql_controller.rb:15:in `execute'
+Completed 200 OK in 11ms (Views: 0.5ms | ActiveRecord: 4.6ms | Allocations: 7814)
+
+
+[StatsD] CharityApp.request_time:34|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+[StatsD] CharityApp.request_content_length:119|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+Started POST "/graphql" for 192.168.64.86 at 2019-12-10 08:36:33 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  categories {\n    apiId\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  categories {\n    apiId\n    description\n    __typename\n  }\n}\n"}}
+  [1m[36mCategory Load (1.5ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  ↳ app/controllers/graphql_controller.rb:15:in `execute'
+Completed 200 OK in 8ms (Views: 0.8ms | ActiveRecord: 1.5ms | Allocations: 2806)
+
+
+[StatsD] CharityApp.request_time:16|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+[StatsD] CharityApp.request_content_length:119|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+Started POST "/graphql" for 192.168.64.86 at 2019-12-10 08:37:01 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  categories {\n    apiId\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  categories {\n    apiId\n    description\n    __typename\n  }\n}\n"}}
+  [1m[36mCategory Load (5.7ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  ↳ app/controllers/graphql_controller.rb:15:in `execute'
+Completed 200 OK in 13ms (Views: 0.7ms | ActiveRecord: 5.7ms | Allocations: 5607)
+
+
+[StatsD] CharityApp.request_time:17|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+[StatsD] CharityApp.request_content_length:119|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+Started POST "/graphql" for 192.168.64.86 at 2019-12-10 08:37:07 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  categories {\n    apiId\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  categories {\n    apiId\n    description\n    __typename\n  }\n}\n"}}
+  [1m[36mCategory Load (11.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  ↳ app/controllers/graphql_controller.rb:15:in `execute'
+Completed 200 OK in 19ms (Views: 0.7ms | ActiveRecord: 11.0ms | Allocations: 11153)
+
+
+[StatsD] CharityApp.request_time:41|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+[StatsD] CharityApp.request_content_length:119|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+Started POST "/graphql" for 192.168.64.86 at 2019-12-10 08:37:28 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  categories {\n    apiId\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  categories {\n    apiId\n    description\n    __typename\n  }\n}\n"}}
+  [1m[36mCategory Load (5.1ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  ↳ app/controllers/graphql_controller.rb:15:in `execute'
+Completed 200 OK in 11ms (Views: 0.4ms | ActiveRecord: 5.1ms | Allocations: 2773)
+
+
+[StatsD] CharityApp.request_time:17|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+[StatsD] CharityApp.request_content_length:119|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+Started POST "/graphql" for 192.168.64.86 at 2019-12-10 08:38:09 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  categories {\n    apiId\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  categories {\n    apiId\n    description\n    __typename\n  }\n}\n"}}
+  [1m[36mCategory Load (4.6ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  ↳ app/controllers/graphql_controller.rb:15:in `execute'
+Completed 200 OK in 13ms (Views: 0.7ms | ActiveRecord: 4.6ms | Allocations: 2781)
+
+
+[StatsD] CharityApp.request_time:20|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+[StatsD] CharityApp.request_content_length:119|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+Started POST "/graphql" for 192.168.64.86 at 2019-12-10 08:38:09 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>"charitiesForCategory", "variables"=>{"apiId"=>"C"}, "query"=>"query charitiesForCategory($apiId: String!) {\n  charitiesForCategory(apiId: $apiId) {\n    employerId\n    name\n    url\n    categoryName\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>"charitiesForCategory", "variables"=>{"apiId"=>"C"}, "query"=>"query charitiesForCategory($apiId: String!) {\n  charitiesForCategory(apiId: $apiId) {\n    employerId\n    name\n    url\n    categoryName\n    __typename\n  }\n}\n"}}
+  [1m[36mCharity Load (1.3ms)[0m  [1m[34mSELECT `charities`.* FROM `charities` WHERE `charities`.`category_api_id` = 'C'[0m
+  ↳ app/controllers/graphql_controller.rb:15:in `execute'
+Completed 200 OK in 12ms (Views: 1.4ms | ActiveRecord: 1.3ms | Allocations: 4962)
+
+
+[StatsD] CharityApp.request_time:19|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+[StatsD] CharityApp.request_content_length:242|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+Started POST "/graphql" for 192.168.64.86 at 2019-12-10 08:38:10 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  categories {\n    apiId\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  categories {\n    apiId\n    description\n    __typename\n  }\n}\n"}}
+  [1m[36mCategory Load (1.4ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  ↳ app/controllers/graphql_controller.rb:15:in `execute'
+Completed 200 OK in 8ms (Views: 0.4ms | ActiveRecord: 1.4ms | Allocations: 2771)
+
+
+[StatsD] CharityApp.request_time:14|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+[StatsD] CharityApp.request_content_length:119|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+Started POST "/graphql" for 192.168.64.86 at 2019-12-10 08:38:10 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>"charitiesForCategory", "variables"=>{"apiId"=>"D"}, "query"=>"query charitiesForCategory($apiId: String!) {\n  charitiesForCategory(apiId: $apiId) {\n    employerId\n    name\n    url\n    categoryName\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>"charitiesForCategory", "variables"=>{"apiId"=>"D"}, "query"=>"query charitiesForCategory($apiId: String!) {\n  charitiesForCategory(apiId: $apiId) {\n    employerId\n    name\n    url\n    categoryName\n    __typename\n  }\n}\n"}}
+  [1m[36mCharity Load (1.4ms)[0m  [1m[34mSELECT `charities`.* FROM `charities` WHERE `charities`.`category_api_id` = 'D'[0m
+  ↳ app/controllers/graphql_controller.rb:15:in `execute'
+Completed 200 OK in 12ms (Views: 1.6ms | ActiveRecord: 1.4ms | Allocations: 4919)
+
+
+[StatsD] CharityApp.request_time:16|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+[StatsD] CharityApp.request_content_length:242|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+Started POST "/graphql" for 192.168.64.86 at 2019-12-10 08:38:11 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  categories {\n    apiId\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  categories {\n    apiId\n    description\n    __typename\n  }\n}\n"}}
+  [1m[36mCategory Load (4.3ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  ↳ app/controllers/graphql_controller.rb:15:in `execute'
+Completed 200 OK in 12ms (Views: 0.5ms | ActiveRecord: 4.3ms | Allocations: 2781)
+
+
+[StatsD] CharityApp.request_time:15|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+Started POST "/graphql" for 192.168.64.86 at 2019-12-10 08:38:11 -0500
+[StatsD] CharityApp.request_content_length:119|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>"charitiesForCategory", "variables"=>{"apiId"=>"F"}, "query"=>"query charitiesForCategory($apiId: String!) {\n  charitiesForCategory(apiId: $apiId) {\n    employerId\n    name\n    url\n    categoryName\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>"charitiesForCategory", "variables"=>{"apiId"=>"F"}, "query"=>"query charitiesForCategory($apiId: String!) {\n  charitiesForCategory(apiId: $apiId) {\n    employerId\n    name\n    url\n    categoryName\n    __typename\n  }\n}\n"}}
+  [1m[36mCharity Load (2.2ms)[0m  [1m[34mSELECT `charities`.* FROM `charities` WHERE `charities`.`category_api_id` = 'F'[0m
+  ↳ app/controllers/graphql_controller.rb:15:in `execute'
+Completed 200 OK in 14ms (Views: 1.4ms | ActiveRecord: 2.2ms | Allocations: 4942)
+
+
+[StatsD] CharityApp.request_time:18|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+[StatsD] CharityApp.request_content_length:242|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+Started POST "/graphql" for 192.168.64.86 at 2019-12-10 08:39:26 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  categories {\n    apiId\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  categories {\n    apiId\n    description\n    __typename\n  }\n}\n"}}
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  ↳ app/controllers/graphql_controller.rb:15:in `execute'
+Completed 200 OK in 13ms (Views: 1.8ms | ActiveRecord: 1.0ms | Allocations: 2815)
+
+
+[StatsD] CharityApp.request_time:30|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+[StatsD] CharityApp.request_content_length:119|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+Started POST "/graphql" for 192.168.64.86 at 2019-12-10 08:39:26 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>"charitiesForCategory", "variables"=>{"apiId"=>"F"}, "query"=>"query charitiesForCategory($apiId: String!) {\n  charitiesForCategory(apiId: $apiId) {\n    employerId\n    name\n    url\n    categoryName\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>"charitiesForCategory", "variables"=>{"apiId"=>"F"}, "query"=>"query charitiesForCategory($apiId: String!) {\n  charitiesForCategory(apiId: $apiId) {\n    employerId\n    name\n    url\n    categoryName\n    __typename\n  }\n}\n"}}
+  [1m[36mCharity Load (1.6ms)[0m  [1m[34mSELECT `charities`.* FROM `charities` WHERE `charities`.`category_api_id` = 'F'[0m
+  ↳ app/controllers/graphql_controller.rb:15:in `execute'
+Completed 200 OK in 22ms (Views: 4.3ms | ActiveRecord: 1.6ms | Allocations: 5255)
+
+
+[StatsD] CharityApp.request_time:30|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+[StatsD] CharityApp.request_content_length:242|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+Started POST "/graphql" for 192.168.64.86 at 2019-12-10 08:39:34 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  categories {\n    apiId\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  categories {\n    apiId\n    description\n    __typename\n  }\n}\n"}}
+Started POST "/graphql" for 192.168.64.86 at 2019-12-10 08:39:34 -0500
+  [1m[36mCategory Load (7.5ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  ↳ app/controllers/graphql_controller.rb:15:in `execute'
+Completed 200 OK in 14ms (Views: 0.6ms | ActiveRecord: 7.5ms | Allocations: 4069)
+
+
+[StatsD] CharityApp.request_time:30|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+[StatsD] CharityApp.request_content_length:119|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>"charitiesForCategory", "variables"=>{"apiId"=>"C"}, "query"=>"query charitiesForCategory($apiId: String!) {\n  charitiesForCategory(apiId: $apiId) {\n    employerId\n    name\n    url\n    categoryName\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>"charitiesForCategory", "variables"=>{"apiId"=>"C"}, "query"=>"query charitiesForCategory($apiId: String!) {\n  charitiesForCategory(apiId: $apiId) {\n    employerId\n    name\n    url\n    categoryName\n    __typename\n  }\n}\n"}}
+  [1m[36mCharity Load (3.3ms)[0m  [1m[34mSELECT `charities`.* FROM `charities` WHERE `charities`.`category_api_id` = 'C'[0m
+  ↳ app/controllers/graphql_controller.rb:15:in `execute'
+Completed 200 OK in 12ms (Views: 0.9ms | ActiveRecord: 3.3ms | Allocations: 5069)
+
+
+[StatsD] CharityApp.request_time:22|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+[StatsD] CharityApp.request_content_length:242|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+Started POST "/graphql" for 192.168.64.86 at 2019-12-10 08:41:26 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  categories {\n    apiId\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  categories {\n    apiId\n    description\n    __typename\n  }\n}\n"}}
+  [1m[36mCategory Load (4.3ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  ↳ app/controllers/graphql_controller.rb:15:in `execute'
+Completed 200 OK in 11ms (Views: 0.6ms | ActiveRecord: 4.3ms | Allocations: 3427)
+
+
+[StatsD] CharityApp.request_time:21|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+[StatsD] CharityApp.request_content_length:119|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+Started POST "/graphql" for 192.168.64.86 at 2019-12-10 08:41:26 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>"charitiesForCategory", "variables"=>{"apiId"=>"C"}, "query"=>"query charitiesForCategory($apiId: String!) {\n  charitiesForCategory(apiId: $apiId) {\n    employerId\n    name\n    url\n    categoryName\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>"charitiesForCategory", "variables"=>{"apiId"=>"C"}, "query"=>"query charitiesForCategory($apiId: String!) {\n  charitiesForCategory(apiId: $apiId) {\n    employerId\n    name\n    url\n    categoryName\n    __typename\n  }\n}\n"}}
+  [1m[36mCharity Load (1.4ms)[0m  [1m[34mSELECT `charities`.* FROM `charities` WHERE `charities`.`category_api_id` = 'C'[0m
+  ↳ app/controllers/graphql_controller.rb:15:in `execute'
+Completed 200 OK in 25ms (Views: 0.8ms | ActiveRecord: 1.4ms | Allocations: 10251)
+
+
+[StatsD] CharityApp.request_time:31|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+[StatsD] CharityApp.request_content_length:242|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+Started POST "/graphql" for 192.168.64.86 at 2019-12-10 08:41:33 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  categories {\n    apiId\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  categories {\n    apiId\n    description\n    __typename\n  }\n}\n"}}
+  [1m[36mCategory Load (3.5ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  ↳ app/controllers/graphql_controller.rb:15:in `execute'
+Completed 200 OK in 19ms (Views: 0.3ms | ActiveRecord: 3.5ms | Allocations: 2775)
+
+
+[StatsD] CharityApp.request_time:26|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+[StatsD] CharityApp.request_content_length:119|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+Started POST "/graphql" for 192.168.64.86 at 2019-12-10 08:42:59 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  categories {\n    apiId\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  categories {\n    apiId\n    description\n    __typename\n  }\n}\n"}}
+  [1m[36mCategory Load (3.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  ↳ app/controllers/graphql_controller.rb:15:in `execute'
+Completed 200 OK in 12ms (Views: 0.6ms | ActiveRecord: 3.0ms | Allocations: 8475)
+
+
+[StatsD] CharityApp.request_time:31|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+[StatsD] CharityApp.request_content_length:119|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+Started POST "/graphql" for 192.168.64.86 at 2019-12-10 08:43:12 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  categories {\n    apiId\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  categories {\n    apiId\n    description\n    __typename\n  }\n}\n"}}
+  [1m[36mCategory Load (3.2ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  ↳ app/controllers/graphql_controller.rb:15:in `execute'
+Completed 200 OK in 8ms (Views: 0.6ms | ActiveRecord: 3.2ms | Allocations: 3080)
+
+
+[StatsD] CharityApp.request_time:23|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+[StatsD] CharityApp.request_content_length:119|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+Started POST "/graphql" for 192.168.64.86 at 2019-12-10 08:43:32 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  categories {\n    apiId\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  categories {\n    apiId\n    description\n    __typename\n  }\n}\n"}}
+  [1m[36mCategory Load (2.3ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  ↳ app/controllers/graphql_controller.rb:15:in `execute'
+Completed 200 OK in 10ms (Views: 0.7ms | ActiveRecord: 2.3ms | Allocations: 2772)
+
+
+[StatsD] CharityApp.request_time:15|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+[StatsD] CharityApp.request_content_length:119|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+Started POST "/graphql" for 192.168.64.86 at 2019-12-10 08:44:06 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  categories {\n    apiId\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  categories {\n    apiId\n    description\n    __typename\n  }\n}\n"}}
+  [1m[36mCategory Load (2.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  ↳ app/controllers/graphql_controller.rb:15:in `execute'
+Completed 200 OK in 10ms (Views: 0.4ms | ActiveRecord: 2.0ms | Allocations: 6102)
+
+
+[StatsD] CharityApp.request_time:36|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+[StatsD] CharityApp.request_content_length:119|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+Started POST "/graphql" for 192.168.64.86 at 2019-12-10 08:45:23 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  categories {\n    apiId\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  categories {\n    apiId\n    description\n    __typename\n  }\n}\n"}}
+  [1m[36mCategory Load (9.6ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  ↳ app/controllers/graphql_controller.rb:15:in `execute'
+Completed 200 OK in 16ms (Views: 0.6ms | ActiveRecord: 9.6ms | Allocations: 2773)
+
+
+[StatsD] CharityApp.request_time:28|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+[StatsD] CharityApp.request_content_length:119|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+Started POST "/graphql" for 192.168.64.86 at 2019-12-10 08:46:15 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  categories {\n    apiId\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  categories {\n    apiId\n    description\n    __typename\n  }\n}\n"}}
+  [1m[36mCategory Load (3.9ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  ↳ app/controllers/graphql_controller.rb:15:in `execute'
+Completed 200 OK in 10ms (Views: 0.4ms | ActiveRecord: 3.9ms | Allocations: 9435)
+
+
+[StatsD] CharityApp.request_time:23|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+[StatsD] CharityApp.request_content_length:119|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+Started POST "/graphql" for 192.168.64.86 at 2019-12-10 08:48:11 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  categories {\n    apiId\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  categories {\n    apiId\n    description\n    __typename\n  }\n}\n"}}
+  [1m[36mCategory Load (0.8ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  ↳ app/controllers/graphql_controller.rb:15:in `execute'
+Completed 200 OK in 10ms (Views: 0.6ms | ActiveRecord: 0.8ms | Allocations: 4639)
+
+
+[StatsD] CharityApp.request_time:17|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+[StatsD] CharityApp.request_content_length:119|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+Started POST "/graphql" for 192.168.64.86 at 2019-12-10 08:49:12 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  categories {\n    apiId\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  categories {\n    apiId\n    description\n    __typename\n  }\n}\n"}}
+  [1m[36mCategory Load (1.4ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  ↳ app/controllers/graphql_controller.rb:15:in `execute'
+Completed 200 OK in 7ms (Views: 0.4ms | ActiveRecord: 1.4ms | Allocations: 4951)
+
+
+[StatsD] CharityApp.request_time:36|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+[StatsD] CharityApp.request_content_length:119|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+Started POST "/graphql" for 192.168.64.86 at 2019-12-10 08:50:21 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  categories {\n    apiId\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  categories {\n    apiId\n    description\n    __typename\n  }\n}\n"}}
+  [1m[36mCategory Load (2.9ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  ↳ app/controllers/graphql_controller.rb:15:in `execute'
+Completed 200 OK in 14ms (Views: 0.5ms | ActiveRecord: 2.9ms | Allocations: 11624)
+
+
+[StatsD] CharityApp.request_time:33|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+[StatsD] CharityApp.request_content_length:119|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+Started POST "/graphql" for 192.168.64.86 at 2019-12-10 08:50:40 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  categories {\n    apiId\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  categories {\n    apiId\n    description\n    __typename\n  }\n}\n"}}
+  [1m[36mCategory Load (22.3ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  ↳ app/controllers/graphql_controller.rb:15:in `execute'
+Completed 200 OK in 30ms (Views: 0.4ms | ActiveRecord: 22.3ms | Allocations: 8111)
+
+
+[StatsD] CharityApp.request_time:48|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+[StatsD] CharityApp.request_content_length:119|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+Started POST "/graphql" for 192.168.64.86 at 2019-12-10 08:51:18 -0500
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>nil, "variables"=>{}, "query"=>"{\n  categories {\n    apiId\n    description\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>nil, "variables"=>{}, "query"=>"{\n  categories {\n    apiId\n    description\n    __typename\n  }\n}\n"}}
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT `categories`.* FROM `categories`[0m
+  ↳ app/controllers/graphql_controller.rb:15:in `execute'
+Completed 200 OK in 8ms (Views: 0.5ms | ActiveRecord: 1.0ms | Allocations: 3985)
+
+
+[StatsD] CharityApp.request_time:17|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
+[StatsD] CharityApp.request_content_length:119|d|#controller:graphql,action:execute,request_method:POST,request_format:*/*,response_code:200,response_type:2xx,environment:development
