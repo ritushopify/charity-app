@@ -25,7 +25,6 @@ export default function CharitiesWithHook(props) {
               charity.state
             )}]`,
             media: media
-            //  url: charity.url
           };
         });
         function findCharity(employerId) {
@@ -40,14 +39,13 @@ export default function CharitiesWithHook(props) {
         }
         return (
           <Page
-            title={"Charities for " + categoryName}
-            subtitle={"Click below to learn more about these charities."}
+            title={`${categoryName} Charities`}
+            subtitle={"Find out more about the charities below."}
           >
             <Layout>
               <Layout.Section>
                 <Card>
                   <OptionList
-                    //  title="Available Charities"
                     options={items}
                     // renderItem={CharityItem}
                     onChange={setSelectedItem}
