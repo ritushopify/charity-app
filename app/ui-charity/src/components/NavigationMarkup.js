@@ -16,7 +16,7 @@ export default function NavigationMarkup() {
         items={[
           {
             url: "/Welcome",
-            label: "Welcome to A Happier World",
+            label: "Welcome to Happy World, Inc.",
             icon: HomeMajorMonotone,
             exactMatch: false
           }
