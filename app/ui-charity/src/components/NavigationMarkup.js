@@ -11,20 +11,12 @@ import CategoriesSection from "./categories/CategoriesSection";
 export default function NavigationMarkup() {
   return (
     <Navigation location="/">
-      {/* <Navigation.Section
-        items={[
-          {
-            label: "Back to Shopify",
-            icon: ArrowLeftMinor
-          }
-        ]}
-      /> */}
       <Navigation.Section
         separator
         items={[
           {
             url: "/Welcome",
-            label: "Welcome to Happy World",
+            label: "Welcome to A Happier World",
             icon: HomeMajorMonotone,
             exactMatch: false
           }

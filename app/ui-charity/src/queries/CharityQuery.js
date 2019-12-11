@@ -6,6 +6,8 @@ const charityQuery = gql`
       employerId
       name
       url
+      city
+      state
       categoryName
     }
   }
