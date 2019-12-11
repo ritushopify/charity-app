@@ -14,7 +14,7 @@ function FrameRoutes() {
           exact
           path="/charities/:apiId"
           render={props => {
-            return <CharitiesSection {...props} />;
+            return <CharitiesSection apiId={props.match.params.apiId} />;
           }}
         />
       </Switch>
