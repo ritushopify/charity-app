@@ -19,7 +19,13 @@ module Types
     def charities_for_category(api_id:)
       Charity.where(category_api_id: api_id)
     end
+
+    field :card, [Types::CardType], null: false
+    def card
+      Card.all
+    end
    
+  
     # TODO: remove me
     field :test_field, String, null: false,
       description: "An example field added by the generator"
