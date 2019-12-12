@@ -1,7 +1,10 @@
 module Types
   class MutationType < Types::BaseObject
-    field :updateCard, mutation: Mutations::UpdateCard
-   # TODO: remove me
+    
+    field :update_card, mutation: Mutations::UpdateCard
+
+
+  
     field :test_field, String, null: false,
       description: "An example field added by the generator"
     def test_field

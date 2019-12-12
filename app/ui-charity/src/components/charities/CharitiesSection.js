@@ -6,9 +6,6 @@ import CharityDetailsSection from "./CharityDetailsSection";
 
 export default function CharitiesSection(props) {
   const [selectedItem, setSelectedItem] = useState([]);
-  function mixedCase(word) {
-    return word[0].toUpperCase() + word.slice(1).toLowerCase();
-  }
   return (
     <Query query={charityQuery} variables={{ apiId: props.apiId }}>
       {({ loading, error, data }) => {
@@ -21,9 +18,7 @@ export default function CharitiesSection(props) {
           const media = <Avatar customer size="medium" name={name} />;
           return {
             value: charity.employerId,
-            label: `${name} [${mixedCase(charity.city)}, ${mixedCase(
-              charity.state
-            )}]`,
+            label: `${name} [${charity.city}, ${charity.state}]`,
             media: media
           };
         });

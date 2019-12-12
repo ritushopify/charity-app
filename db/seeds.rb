@@ -9,50 +9,50 @@
 require 'rest-client';
 require 'json';
 
-# Charity.destroy_all
-# Category.destroy_all
+Charity.destroy_all
+Category.destroy_all
 
-# categories = [
-#   { "categoryId": "C", "categoryDesc": "Environmental Quality, Protection and Beautification" }, 
-#   { "categoryId": "D", "categoryDesc": "Animal-Related" }, 
-#   { "categoryId": "F", "categoryDesc": "Mental Health, Crisis Intervention" }, 
-#   { "categoryId": "H", "categoryDesc": "Medical Research" }, 
-#   { "categoryId": "K", "categoryDesc": "Food, Agriculture and Nutrition" }, 
-#   { "categoryId": "L", "categoryDesc": "Housing, Shelter" }, 
-#   { "categoryId": "O", "categoryDesc": "Youth Development" }, 
-#   { "categoryId": "Q", "categoryDesc": "International, Foreign Affairs and National Security" },
-#   { "categoryId": "U", "categoryDesc": "Science and Technology Research Institutes, Services" },
-#   { "categoryId": "X", "categoryDesc": "Religion-Related, Spiritual Development" }, 
-# ]
+categories = [
+  { "categoryId": "C", "categoryDesc": "Environmental Quality, Protection and Beautification" }, 
+  { "categoryId": "D", "categoryDesc": "Animal-Related" }, 
+  { "categoryId": "F", "categoryDesc": "Mental Health, Crisis Intervention" }, 
+  { "categoryId": "H", "categoryDesc": "Medical Research" }, 
+  { "categoryId": "K", "categoryDesc": "Food, Agriculture and Nutrition" }, 
+  { "categoryId": "L", "categoryDesc": "Housing, Shelter" }, 
+  { "categoryId": "O", "categoryDesc": "Youth Development" }, 
+  { "categoryId": "Q", "categoryDesc": "International, Foreign Affairs and National Security" },
+  { "categoryId": "U", "categoryDesc": "Science and Technology Research Institutes, Services" },
+  { "categoryId": "X", "categoryDesc": "Religion-Related, Spiritual Development" }, 
+]
 
-# # user_key is needed for the calls to the external API we will be making
-# user_key = Rails.application.config.user_key
+# user_key is needed for the calls to the external API we will be making
+user_key = Rails.application.config.user_key
 
-# # Create categories and the charities for each category
-# categories.each do |category_hash|
-#   category = Category.create(
-#     api_id: category_hash[:categoryId], 
-#     description: category_hash[:categoryDesc]
-#   )
-#   # Get all the charities for this category from the orghunter.com REST API
-#   charities_response = RestClient.post 'http://data.orghunter.com/v1/charitysearch',
-#     {"user_key" => user_key, "category" => category.api_id}
+# Create categories and the charities for each category
+categories.each do |category_hash|
+  category = Category.create(
+    api_id: category_hash[:categoryId], 
+    description: category_hash[:categoryDesc]
+  )
+  # Get all the charities for this category from the orghunter.com REST API
+  charities_response = RestClient.post 'http://data.orghunter.com/v1/charitysearch',
+    {"user_key" => user_key, "category" => category.api_id}
 
-#   "Process the charities response from the REST query"
-#   charities_hash = JSON.parse(charities_response.body)
-#   charities_array = charities_hash["data"]
-#   charities = charities_array.map do |attributeHash|
-#     category.charities.create(
-#       category_api_id: category.api_id,
-#       employer_id: attributeHash["ein"],
-#       name: attributeHash["charityName"],
-#       url: attributeHash["url"],
-#       city: attributeHash["city"],
-#       state: attributeHash["state"],
-#       category_name: attributeHash["category"]
-#     ) 
-#   end
-# end
+  "Process the charities response from the REST query"
+  charities_hash = JSON.parse(charities_response.body)
+  charities_array = charities_hash["data"]
+  charities = charities_array.map do |attributeHash|
+    category.charities.create(
+      category_api_id: category.api_id,
+      employer_id: attributeHash["ein"],
+      name: attributeHash["charityName"],
+      url: attributeHash["url"],
+      city: attributeHash["city".titlecase],
+      state: attributeHash["state".titlecase],
+      category_name: attributeHash["category"]
+    ) 
+  end
+end
 
 
 Donation.destroy_all

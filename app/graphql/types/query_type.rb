@@ -20,13 +20,11 @@ module Types
       Charity.where(category_api_id: api_id)
     end
 
-  field :card, Types::CardType, null: false
-  def card
-    Card.all.first
-  end
+    field :card, Types::CardType, null: false
+    def card
+      Card.all.first
+    end
 
-   
-  
     # TODO: remove me
     field :test_field, String, null: false,
       description: "An example field added by the generator"
