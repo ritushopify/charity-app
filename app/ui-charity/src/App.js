@@ -15,7 +15,7 @@ export default function App() {
       topBarSource:
         "https://seeklogo.com/images/S/shopify-logo-1C711BCDE4-seeklogo.com.png",
       contextualSaveBarSource: "./assets/freeLogo.svg",
-      accessibilityLabel: "Earth Logo"
+      accessibilityLabel: "Shopify Logo"
     }
   };
   return (

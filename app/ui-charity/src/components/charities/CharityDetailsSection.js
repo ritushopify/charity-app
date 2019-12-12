@@ -41,10 +41,8 @@ export default function CharityDetailsSection(props) {
         </Card.Section>
       </Card>
       <Card>
-        <Card.Section title="Please proceed when ready:">
-          <center>
-            <Button>Send Donation and Card</Button>
-          </center>
+        <Card.Section title="Please proceed when ready.">
+          <Button primary>Send Donation and Card</Button>
         </Card.Section>
       </Card>
     </Layout.Section>

@@ -1,10 +1,6 @@
 import React from "react";
 import { Navigation } from "@shopify/polaris";
-import {
-  //  ArrowLeftMinor,
-  HomeMajorMonotone
-  //OrdersMajorTwotone
-} from "@shopify/polaris-icons";
+import { HomeMajorMonotone } from "@shopify/polaris-icons";
 
 import CategoriesSection from "./categories/CategoriesSection";
 
