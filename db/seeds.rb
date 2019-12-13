@@ -64,8 +64,6 @@ person = Person.create(
   email: "ritu.sikka@shopify.com"
 )
 
-puts "after Person"
-
 card=Card.create(
   occasion: :Birthday, 
   blurb: "Happy Birthday", 
@@ -73,11 +71,7 @@ card=Card.create(
   person: person
 )
 
-puts "after Card"
-
 charity = Charity.first
-
-puts "after charity"
 
 donation = Donation.create(
   amount: 150, 
@@ -85,5 +79,3 @@ donation = Donation.create(
   card: card,
   charity: charity
 )
-
-puts "after donation"
