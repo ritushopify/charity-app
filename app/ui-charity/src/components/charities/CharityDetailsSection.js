@@ -1,11 +1,26 @@
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback, useQuery } from "react";
 import { Card, Button, Layout, Link, TextField } from "@shopify/polaris";
+//import CharityInfoCard from "./CharityInfoCard";
+import { cardQuery } from "../../queries/CardQuery";
 
 export default function CharityDetailsSection(props) {
   const charity = props.charity;
   console.log("in details charity is " + JSON.stringify(charity));
+  // const [card, setCard] = useState();
+  // const [blurb, setBlurb] = useState("");
+
+  // const blurbChanged = useCallback(newBlurb => setBlurb(newBlurb), []);
+  // run a query to get the card
+
+  // const { data } = useQuery(cardQuery, {
+  //   onCompleted: () => cardChanged(data.card)
+  // });
+
+  // function cardChanged(card) {
+  //   setValue(card.blurb);
+  // }
+
   const [value, setValue] = useState("Happy Birthday!");
-  const handleChange = useCallback(newValue => setValue(newValue), []);
   function charityInfoCard() {
     if (charity === undefined || charity === []) {
       return <Card></Card>;
@@ -22,6 +37,11 @@ export default function CharityDetailsSection(props) {
       );
     }
   }
+
+  function saveButtonClicked() {
+    console.log("save button clicked");
+  }
+
   return (
     <Layout.Section secondary>
       {charityInfoCard()}
@@ -30,7 +50,7 @@ export default function CharityDetailsSection(props) {
           <TextField value={"Birthday"} />
         </Card.Section>
         <Card.Section title="Your Greeting">
-          <TextField value={value} onChange={handleChange} />
+          <TextField value={value} onChange={setValue} />
         </Card.Section>
         <Card.Section title="Your Optional Message">
           <TextField
@@ -43,7 +63,9 @@ export default function CharityDetailsSection(props) {
       </Card>
       <Card>
         <Card.Section title="Please proceed when ready.">
-          <Button primary>Send Donation and Card</Button>
+          <Button primary onClick={saveButtonClicked}>
+            Send Donation and Card
+          </Button>
         </Card.Section>
       </Card>
     </Layout.Section>

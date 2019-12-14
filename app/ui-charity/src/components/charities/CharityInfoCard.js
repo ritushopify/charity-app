@@ -1,3 +1,6 @@
+import React from "react";
+import { Card, Link } from "@shopify/polaris";
+
 export default function charityInfoCard(props) {
   const charity = props.charity;
   if (charity === undefined) {
