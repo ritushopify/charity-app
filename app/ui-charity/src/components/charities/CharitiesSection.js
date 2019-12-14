@@ -45,14 +45,14 @@ export default function CharitiesSection(props) {
         <Layout.Section>
           <Card>
             <OptionList
-              allowMultiple={false}
+              allowMultiple={false} // false doesn't seem to be working
               options={charityItems}
               onChange={setSelectedItems}
               selected={selectedItems}
             />
           </Card>
         </Layout.Section>
-        <CharityDetailsSection charity={selectedItems[0]} />
+        <CharityDetailsSection charityItem={selectedItems[0]} />
       </Layout>
     </Page>
   );
