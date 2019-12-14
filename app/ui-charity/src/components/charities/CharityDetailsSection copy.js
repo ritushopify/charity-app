@@ -1,30 +1,16 @@
 import React, { useState, useCallback } from "react";
 import { Card, Button, Layout, Link, TextField } from "@shopify/polaris";
+import CharityInfoCard from "./CharittyInfoCard";
 
 export default function CharityDetailsSection(props) {
   const charity = props.charity;
   console.log("in details charity is " + JSON.stringify(charity));
   const [value, setValue] = useState("Happy Birthday!");
   const handleChange = useCallback(newValue => setValue(newValue), []);
-  function charityInfoCard() {
-    if (charity === undefined || charity === []) {
-      return <Card></Card>;
-    } else {
-      const url =
-        "https://donate.makemydonation.org/donate/" + charity.employerId;
-      return (
-        <Card>
-          {console.log("name is " + charity.name)}
-          {charity.name}
-          <br />
-          <Link url={url}>{url}</Link>}
-        </Card>
-      );
-    }
-  }
+
   return (
     <Layout.Section secondary>
-      {charityInfoCard()}
+      {CharityInfoCard(charity)}
       <Card>
         <Card.Section title="Enter Occcasion">
           <TextField value={"Birthday"} />
