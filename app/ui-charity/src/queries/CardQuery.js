@@ -1,6 +1,6 @@
 import gql from "graphql-tag";
 
-const cardQuery = gql`
+const CARD_QUERY = gql`
   query {
     card {
       blurb
@@ -9,4 +9,4 @@ const cardQuery = gql`
   }
 `;
 
-export { cardQuery };
+export { CARD_QUERY };

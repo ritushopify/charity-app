@@ -1,10 +1,18 @@
 import React, { useState } from "react";
 import { Mutation } from "react-apollo";
+import { useQuery } from "@apollo/react-hooks";
 import { Card, Button, TextField } from "@shopify/polaris";
 import { BLURB_MUTATION } from "../../queries/BlurbMutation";
+import { CARD_QUERY } from "../../queries/CardQuery";
 
 export default function GreetingCardSection() {
-  const [blurbValue, setBlurbValue] = useState("Happy Birthday!");
+  const [blurbValue, setBlurbValue] = useState("");
+
+  // Get the card greeting using the card query
+  const { data } = useQuery(CARD_QUERY, {
+    onCompleted: () => setBlurbValue(data.card.blurb)
+  });
+
   return (
     <Card>
       <Card>

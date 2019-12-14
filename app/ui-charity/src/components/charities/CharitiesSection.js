@@ -54,6 +54,7 @@ export default function CharitiesSection(props) {
           </Card>
         </Layout.Section>
         <Layout.Section secondary>
+          {console.log("charity item is " + selectedItems[0])}
           <CharityDetailsSection charityItem={selectedItems[0]} />
           <GreetingCardSection />
         </Layout.Section>
