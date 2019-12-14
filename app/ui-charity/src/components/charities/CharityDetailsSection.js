@@ -1,11 +1,13 @@
-import React, { useState, useCallback, useQuery } from "react";
+import React, { useState, useMutation, useLazyQuery } from "react";
+import { Mutation } from "react-apollo";
 import { Card, Button, Layout, Link, TextField } from "@shopify/polaris";
 //import CharityInfoCard from "./CharityInfoCard";
 import { cardQuery } from "../../queries/CardQuery";
+import { BLURB_MUTATION } from "../../queries/BlurbMutation";
 
 export default function CharityDetailsSection(props) {
-  const charity = props.charity;
-  console.log("in details charity is " + JSON.stringify(charity));
+  const charityItem = props.charityItem;
+  console.log("in details charity is " + JSON.stringify(charityItem));
   // const [card, setCard] = useState();
   // const [blurb, setBlurb] = useState("");
 
@@ -20,27 +22,27 @@ export default function CharityDetailsSection(props) {
   //   setValue(card.blurb);
   // }
 
-  const [value, setValue] = useState("Happy Birthday!");
+  const [blurbValue, setBlurbValue] = useState("Happy Birthday!");
   function charityInfoCard() {
-    if (charity === undefined || charity === []) {
+    if (charityItem === undefined || charityItem === []) {
       return <Card></Card>;
     } else {
       const url =
-        "https://donate.makemydonation.org/donate/" + charity.employerId;
+        "https://donate.makemydonation.org/donate/" + charityItem.employerId;
       return (
         <Card>
-          {console.log("name is " + charity.name)}
-          {charity.name}
+          {console.log("name is " + charityItem.name)}
+          {charityItem.name}
           <br />
           <Link url={url}>{url}</Link>}
         </Card>
       );
     }
   }
-
-  function saveButtonClicked() {
-    console.log("save button clicked");
-  }
+  const blurbChanged = newValue => {
+    setBlurbValue(newValue);
+    console.log("type of blurb value is " + typeof blurbValue);
+  };
 
   return (
     <Layout.Section secondary>
@@ -50,7 +52,7 @@ export default function CharityDetailsSection(props) {
           <TextField value={"Birthday"} />
         </Card.Section>
         <Card.Section title="Your Greeting">
-          <TextField value={value} onChange={setValue} />
+          <TextField value={blurbValue} onChange={setBlurbValue} />
         </Card.Section>
         <Card.Section title="Your Optional Message">
           <TextField
@@ -63,9 +65,13 @@ export default function CharityDetailsSection(props) {
       </Card>
       <Card>
         <Card.Section title="Please proceed when ready.">
-          <Button primary onClick={saveButtonClicked}>
-            Send Donation and Card
-          </Button>
+          <Mutation mutation={BLURB_MUTATION} variables={{ blurb: blurbValue }}>
+            {blurbMutation => (
+              <Button primary onClick={blurbMutation}>
+                Send Donation and Card
+              </Button>
+            )}
+          </Mutation>
         </Card.Section>
       </Card>
     </Layout.Section>

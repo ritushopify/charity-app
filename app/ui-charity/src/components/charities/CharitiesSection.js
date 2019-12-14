@@ -48,7 +48,7 @@ export default function CharitiesSection(props) {
             />
           </Card>
         </Layout.Section>
-        <CharityDetailsSection charity={selectedItems[0]} />
+        <CharityDetailsSection charityItem={selectedItems[0]} />
       </Layout>
     </Page>
   );
