@@ -1,25 +1,21 @@
-import React, { useState } from "react";
-import { Card, Layout, Link } from "@shopify/polaris";
-import GreetingCardSection from "./GreetingCardSection";
+import React from "react";
+import { Card, Link } from "@shopify/polaris";
 
 export default function CharityDetailsSection(props) {
   const charityItem = props.charityItem;
 
-  const url =
-    charityItem === undefined
-      ? ""
-      : "https://donate.makemydonation.org/donate/" + charityItem.employerId;
+  if (charityItem === undefined) return <Card></Card>;
 
-  const name = charityItem === undefined ? "" : charityItem.name;
+  const url =
+    "https://donate.makemydonation.org/donate/" + charityItem.employerId;
+
+  const name = charityItem.name;
 
   return (
-    <Layout.Section secondary>
-      <Card>
-        {name}
-        <br />
-        <Link url={url}>{url}</Link>
-      </Card>
-      <GreetingCardSection />
-    </Layout.Section>
+    <Card>
+      {name}
+      <br />
+      <Link url={url}>{url}</Link>
+    </Card>
   );
 }

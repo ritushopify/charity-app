@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Mutation } from "react-apollo";
-import { Card, Button, Layout, TextField } from "@shopify/polaris";
+import { Card, Button, TextField } from "@shopify/polaris";
 import { BLURB_MUTATION } from "../../queries/BlurbMutation";
 
 export default function GreetingCardSection() {

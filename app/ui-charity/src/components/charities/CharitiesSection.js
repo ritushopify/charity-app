@@ -3,6 +3,7 @@ import { useQuery } from "@apollo/react-hooks";
 import { Page, Card, Layout, OptionList, Avatar } from "@shopify/polaris";
 import { charityQuery } from "../../queries/CharityQuery";
 import CharityDetailsSection from "./CharityDetailsSection";
+import GreetingCardSection from "./GreetingCardSection";
 
 export default function CharitiesSection(props) {
   const [charityItems, setCharityItems] = useState([]);
@@ -42,7 +43,7 @@ export default function CharitiesSection(props) {
       subtitle={"Click below to find out more about these charities."}
     >
       <Layout>
-        <Layout.Section>
+        <Layout.Section primary>
           <Card>
             <OptionList
               allowMultiple={false} // false doesn't seem to be working
@@ -52,7 +53,10 @@ export default function CharitiesSection(props) {
             />
           </Card>
         </Layout.Section>
-        <CharityDetailsSection charityItem={selectedItems[0]} />
+        <Layout.Section secondary>
+          <CharityDetailsSection charityItem={selectedItems[0]} />
+          <GreetingCardSection />
+        </Layout.Section>
       </Layout>
     </Page>
   );
