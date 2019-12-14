@@ -5,17 +5,18 @@ import { charityQuery } from "../../queries/CharityQuery";
 import CharityDetailsSection from "./CharityDetailsSection";
 
 export default function CharitiesSection(props) {
+  const [charityItems, setCharityItems] = useState([]);
   const [selectedItems, setSelectedItems] = useState([]);
-  const [items, setItems] = useState([]);
 
-  // run a query to get charities for the given category
+  // Run a query to get charities for the given category.
   const { data } = useQuery(charityQuery, {
     variables: { apiId: props.apiId },
     onCompleted: () => charitiesChanged(data.charitiesForCategory)
   });
 
   function charitiesChanged(charities) {
-    const charityItems = charities.map(charity => {
+    // Re-build the charity items from the new charities.
+    const items = charities.map(charity => {
       const name = charity.name;
       const media = <Avatar customer size="medium" name={name} />;
       return {
@@ -26,11 +27,14 @@ export default function CharitiesSection(props) {
         media: media
       };
     });
-    setItems(charityItems);
+    setCharityItems(items);
   }
 
+  //  All charity items know their category name. So, select first one.
   const pageTitle =
-    items.length === 0 ? "" : `${items[0].categoryName} Charities`;
+    charityItems.length === 0
+      ? ""
+      : `${charityItems[0].categoryName} Charities`;
 
   return (
     <Page
@@ -42,13 +46,13 @@ export default function CharitiesSection(props) {
           <Card>
             <OptionList
               allowMultiple={false}
-              options={items}
+              options={charityItems}
               onChange={setSelectedItems}
               selected={selectedItems}
             />
           </Card>
         </Layout.Section>
-        <CharityDetailsSection charityItem={selectedItems[0]} />
+        <CharityDetailsSection charity={selectedItems[0]} />
       </Layout>
     </Page>
   );
