@@ -1,16 +1,13 @@
 module Mutations
   class UpdateCard < BaseMutation
 
-    argument :id, String, required: true
-    argument :blurb, String, required: false
-    argument :message, String, required: false
-
+    argument :card_input, Types::CardAttributes, required: true
     field :status, String, null: false
     
-    def resolve(id:, blurb:, message:) 
-      card = Card.find(id.to_i)
-      card.blurb = blurb
-      card.message = message
+    def resolve(card_input:) 
+      card = Card.find(card_input.id.to_i)
+      card.blurb = card_input.blurb
+      card.message = card_input.message
       card.save
       {status: 'Success'}
     end
