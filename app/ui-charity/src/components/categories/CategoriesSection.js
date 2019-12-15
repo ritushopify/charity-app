@@ -2,10 +2,10 @@ import React from "react";
 import { useQuery } from "@apollo/react-hooks";
 import { Navigation } from "@shopify/polaris";
 import { HomeMajorMonotone } from "@shopify/polaris-icons";
-import { categoryQuery } from "../../queries/CategoryQuery";
+import { CATEGORY_QUERY } from "../../queries/CategoryQuery";
 
 export default function CategoriesSection() {
-  const { loading, error, data } = useQuery(categoryQuery);
+  const { loading, error, data } = useQuery(CATEGORY_QUERY);
   if (loading) return "Loading...";
   if (error) return `Error! ${error.message}`;
 

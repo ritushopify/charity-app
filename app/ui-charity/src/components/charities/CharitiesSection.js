@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useQuery } from "@apollo/react-hooks";
 import { Page, Card, Layout, OptionList, Avatar } from "@shopify/polaris";
-import { charityQuery } from "../../queries/CharityQuery";
+import { CHARITY_QUERY } from "../../queries/CharityQuery";
 import CharityDetailsSection from "./CharityDetailsSection";
 import GreetingCardSection from "./GreetingCardSection";
 
@@ -11,7 +11,7 @@ export default function CharitiesSection(props) {
   const [pageTitle, setPageTitle] = useState("");
 
   // Run a query to get charities for the given category.
-  const { data } = useQuery(charityQuery, {
+  const { data } = useQuery(CHARITY_QUERY, {
     variables: { apiId: props.apiId },
     onCompleted: () => charitiesChanged(data.charitiesForCategory)
   });

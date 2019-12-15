@@ -1,6 +1,6 @@
 import gql from "graphql-tag";
 
-const charityQuery = gql`
+const CHARITY_QUERY = gql`
   query charitiesForCategory($apiId: String!) {
     charitiesForCategory(apiId: $apiId) {
       employerId
@@ -13,4 +13,4 @@ const charityQuery = gql`
   }
 `;
 
-export { charityQuery };
+export { CHARITY_QUERY };

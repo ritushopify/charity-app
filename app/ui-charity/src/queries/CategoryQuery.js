@@ -1,6 +1,6 @@
 import gql from "graphql-tag";
 
-const categoryQuery = gql`
+const CATEGORY_QUERY = gql`
   query {
     categories {
       apiId
@@ -9,4 +9,4 @@ const categoryQuery = gql`
   }
 `;
 
-export { categoryQuery };
+export { CATEGORY_QUERY };
