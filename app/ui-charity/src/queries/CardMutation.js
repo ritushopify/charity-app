@@ -1,11 +1,11 @@
 import gql from "graphql-tag";
 
-const cardMutation = gql`
-  mutation update_card($id: ID!, $blurb: String) {
-    updateCard(id: $id, update: { blurb: $blurb }) {
-      succeess
+const CARD_MUTATION = gql`
+  mutation updateCard($id: String!, $blurb: String, $message: String) {
+    updateCard(input: { id: $id, blurb: $blurb, message: $message }) {
+      status
     }
   }
 `;
 
-export { cardMutation };
+export { CARD_MUTATION };

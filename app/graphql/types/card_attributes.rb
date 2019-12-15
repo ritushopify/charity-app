@@ -1,6 +1,6 @@
 module Types
-  class CardInputType < Types::BaseInputObject
-    argument :id, ID, required: true
+  class CardAttributes < Types::BaseInputObject
+    argument :id, String, required: true
     argument :blurb, String, required: false
     argument :message, String, required: false
   end
