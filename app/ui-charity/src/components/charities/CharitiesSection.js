@@ -8,6 +8,7 @@ import GreetingCardSection from "./GreetingCardSection";
 export default function CharitiesSection(props) {
   const [charityItems, setCharityItems] = useState([]);
   const [selectedItems, setSelectedItems] = useState([]);
+  const [pageTitle, setPageTitle] = useState("");
 
   // Run a query to get charities for the given category.
   const { data } = useQuery(charityQuery, {
@@ -29,13 +30,8 @@ export default function CharitiesSection(props) {
       };
     });
     setCharityItems(items);
+    setPageTitle(`${items[0].categoryName} Charities`);
   }
-
-  //  All charity items know their category name. So, select first one.
-  const pageTitle =
-    charityItems.length === 0
-      ? ""
-      : `${charityItems[0].categoryName} Charities`;
 
   return (
     <Page
@@ -54,7 +50,6 @@ export default function CharitiesSection(props) {
           </Card>
         </Layout.Section>
         <Layout.Section secondary>
-          {console.log("charity item is " + selectedItems[0])}
           <CharityDetailsSection charityItem={selectedItems[0]} />
           <GreetingCardSection />
         </Layout.Section>

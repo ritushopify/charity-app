@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Mutation } from "react-apollo";
 import { useQuery } from "@apollo/react-hooks";
 import { Card, Button, TextField } from "@shopify/polaris";
-import { CARD_MUTATION } from "../../queries/CardMutation";
+import { UPDATE_CARD_MUTATION } from "../../queries/UpdateCardMutation";
 import { CARD_QUERY } from "../../queries/CardQuery";
 
 export default function GreetingCardSection() {
@@ -39,15 +39,15 @@ export default function GreetingCardSection() {
       <Card>
         <Card.Section title="Please proceed when ready.">
           <Mutation
-            mutation={CARD_MUTATION}
+            mutation={UPDATE_CARD_MUTATION}
             variables={{
               id: id,
               blurb: blurbValue,
               message: messageValue
             }}
           >
-            {cardMutation => (
-              <Button primary onClick={cardMutation}>
+            {updateCardMutation => (
+              <Button primary onClick={updateCardMutation}>
                 Send Donation and Card
               </Button>
             )}
