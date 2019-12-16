@@ -6,3 +6,5 @@ To run this charity-app:
 
 * Also run: "npm start".
 
+* In browser, go to "localhost:3000".
+
