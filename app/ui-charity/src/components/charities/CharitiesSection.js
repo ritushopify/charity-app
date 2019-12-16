@@ -42,7 +42,6 @@ export default function CharitiesSection(props) {
         <Layout.Section primary>
           <Card>
             <OptionList
-              allowMultiple={false} // false doesn't seem to be working
               options={charityItems}
               onChange={setSelectedItems}
               selected={selectedItems}

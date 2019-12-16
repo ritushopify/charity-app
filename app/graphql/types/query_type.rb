@@ -22,7 +22,7 @@ module Types
 
     field :card, Types::CardType, null: false
     def card
-      Card.all.first
+      Card.first
     end
 
     # TODO: remove me
