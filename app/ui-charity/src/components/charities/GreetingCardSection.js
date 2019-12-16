@@ -21,39 +21,32 @@ export default function GreetingCardSection() {
 
   return (
     <Card>
-      <Card>
-        <Card.Section title="Enter Occcasion">
-          <TextField value={"Birthday"} />
-        </Card.Section>
-        <Card.Section title="Your Greeting">
-          <TextField value={blurbValue} onChange={setBlurbValue} />
-        </Card.Section>
-        <Card.Section title="Your Optional Message">
-          <TextField
-            multiline
-            value={messageValue}
-            onChange={setMessageValue}
-          />
-        </Card.Section>
-      </Card>
-      <Card>
-        <Card.Section title="Please proceed when ready.">
-          <Mutation
-            mutation={UPDATE_CARD_MUTATION}
-            variables={{
-              id: id,
-              blurb: blurbValue,
-              message: messageValue
-            }}
-          >
-            {updateCardMutation => (
-              <Button primary onClick={updateCardMutation}>
-                Send Donation and Card
-              </Button>
-            )}
-          </Mutation>
-        </Card.Section>
-      </Card>
+      <Card.Section title="Enter Occcasion">
+        <TextField value={"Birthday"} />
+      </Card.Section>
+      <Card.Section title="Your Greeting">
+        <TextField value={blurbValue} onChange={setBlurbValue} />
+      </Card.Section>
+      <Card.Section title="Your Optional Message">
+        <TextField multiline value={messageValue} onChange={setMessageValue} />
+      </Card.Section>
+
+      <Card.Section title="Please proceed when ready.">
+        <Mutation
+          mutation={UPDATE_CARD_MUTATION}
+          variables={{
+            id: id,
+            blurb: blurbValue,
+            message: messageValue
+          }}
+        >
+          {updateCardMutation => (
+            <Button primary onClick={updateCardMutation}>
+              Send Donation and Card
+            </Button>
+          )}
+        </Mutation>
+      </Card.Section>
     </Card>
   );
 }

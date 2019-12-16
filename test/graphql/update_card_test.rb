@@ -1,8 +1,10 @@
 require 'test_helper'
+require 'json'
 
 class UpdateCardTestCase < ActiveSupport::TestCase
   setup  do
     @card = Card.first
+    puts @card.to_json
     @newBlurb = Time.new.to_s
     theMutation = "mutation updateCard($id: String, $blurb: String) {
       updateCard(

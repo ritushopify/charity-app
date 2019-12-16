@@ -9,11 +9,9 @@ export default function CharityDetailsSection(props) {
   const url =
     "https://donate.makemydonation.org/donate/" + charityItem.employerId;
 
-  const name = charityItem.name;
-
   return (
     <Card>
-      {name}
+      {charityItem.name}
       <br />
       <Link url={url}>{url}</Link>
     </Card>

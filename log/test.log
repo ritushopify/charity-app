@@ -789,3 +789,81 @@ UpdateCardTestCase: test_update_card_mutation_is_sucessful
   [1m[36mCard Load (0.4ms)[0m  [1m[34mSELECT `cards`.* FROM `cards` ORDER BY `cards`.`id` ASC LIMIT 1[0m
   [1m[36mCard Load (0.7ms)[0m  [1m[34mSELECT `cards`.* FROM `cards` ORDER BY `cards`.`id` ASC LIMIT 1[0m
   [1m[35m (0.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.6ms)[0m  [1m[35mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixtures Load (0.4ms)[0m  [1m[31mDELETE FROM `categories`;
+DELETE FROM `donations`;
+DELETE FROM `people`;
+DELETE FROM `cards`;
+DELETE FROM `charities`;
+INSERT INTO `categories` (`id`, `api_id`, `description`, `created_at`, `updated_at`) VALUES (980190962, 'MyString', 'MyString', '2019-12-16 02:16:56.690499', '2019-12-16 02:16:56.690499');
+INSERT INTO `donations` (`id`, `amount`, `card_id`, `created_at`, `updated_at`, `person_id`, `charity_id`) VALUES (980190962, 1, 980190962, '2019-12-16 02:16:56.692946', '2019-12-16 02:16:56.692946', DEFAULT, 980190962), (298486374, 1, 298486374, '2019-12-16 02:16:56.692946', '2019-12-16 02:16:56.692946', DEFAULT, 298486374);
+INSERT INTO `people` (`id`, `name`, `email`, `created_at`, `updated_at`) VALUES (980190962, 'MyString', 'MyString', '2019-12-16 02:16:56.695073', '2019-12-16 02:16:56.695073'), (298486374, 'MyString', 'MyString', '2019-12-16 02:16:56.695073', '2019-12-16 02:16:56.695073');
+INSERT INTO `cards` (`id`, `occasion`, `blurb`, `message`, `created_at`, `updated_at`, `person_id`) VALUES (980190962, 1, 'MyString', 'MyString', '2019-12-16 02:16:56.697189', '2019-12-16 02:16:56.697189', DEFAULT), (298486374, 1, 'MyString', 'MyString', '2019-12-16 02:16:56.697189', '2019-12-16 02:16:56.697189', DEFAULT);
+INSERT INTO `charities` (`id`, `category_id`, `category_api_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`, `category_name`) VALUES (980190962, 980190962, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2019-12-16 02:16:56.698793', '2019-12-16 02:16:56.698793', DEFAULT), (298486374, 298486374, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2019-12-16 02:16:56.698793', '2019-12-16 02:16:56.698793', DEFAULT)[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+----------------------------------------------------------
+UpdateCardTestCase: test_update_card_mutation_is_sucessful
+----------------------------------------------------------
+  [1m[36mCard Load (0.4ms)[0m  [1m[34mSELECT `cards`.* FROM `cards` ORDER BY `cards`.`id` ASC LIMIT 1[0m
+  [1m[36mCard Load (0.8ms)[0m  [1m[34mSELECT `cards`.* FROM `cards` ORDER BY `cards`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixtures Load (0.4ms)[0m  [1m[31mDELETE FROM `categories`;
+DELETE FROM `donations`;
+DELETE FROM `people`;
+DELETE FROM `cards`;
+DELETE FROM `charities`;
+INSERT INTO `categories` (`id`, `api_id`, `description`, `created_at`, `updated_at`) VALUES (980190962, 'MyString', 'MyString', '2019-12-16 02:17:33.161298', '2019-12-16 02:17:33.161298');
+INSERT INTO `donations` (`id`, `amount`, `card_id`, `created_at`, `updated_at`, `person_id`, `charity_id`) VALUES (980190962, 1, 980190962, '2019-12-16 02:17:33.163579', '2019-12-16 02:17:33.163579', DEFAULT, 980190962), (298486374, 1, 298486374, '2019-12-16 02:17:33.163579', '2019-12-16 02:17:33.163579', DEFAULT, 298486374);
+INSERT INTO `people` (`id`, `name`, `email`, `created_at`, `updated_at`) VALUES (980190962, 'MyString', 'MyString', '2019-12-16 02:17:33.165046', '2019-12-16 02:17:33.165046'), (298486374, 'MyString', 'MyString', '2019-12-16 02:17:33.165046', '2019-12-16 02:17:33.165046');
+INSERT INTO `cards` (`id`, `occasion`, `blurb`, `message`, `created_at`, `updated_at`, `person_id`) VALUES (980190962, 1, 'MyString', 'MyString', '2019-12-16 02:17:33.166862', '2019-12-16 02:17:33.166862', DEFAULT), (298486374, 1, 'MyString', 'MyString', '2019-12-16 02:17:33.166862', '2019-12-16 02:17:33.166862', DEFAULT);
+INSERT INTO `charities` (`id`, `category_id`, `category_api_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`, `category_name`) VALUES (980190962, 980190962, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2019-12-16 02:17:33.169225', '2019-12-16 02:17:33.169225', DEFAULT), (298486374, 298486374, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2019-12-16 02:17:33.169225', '2019-12-16 02:17:33.169225', DEFAULT)[0m
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+----------------------------------------------------------
+UpdateCardTestCase: test_update_card_mutation_is_sucessful
+----------------------------------------------------------
+  [1m[36mCard Load (0.4ms)[0m  [1m[34mSELECT `cards`.* FROM `cards` ORDER BY `cards`.`id` ASC LIMIT 1[0m
+  [1m[36mCard Load (0.6ms)[0m  [1m[34mSELECT `cards`.* FROM `cards` ORDER BY `cards`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixtures Load (0.4ms)[0m  [1m[31mDELETE FROM `categories`;
+DELETE FROM `donations`;
+DELETE FROM `people`;
+DELETE FROM `cards`;
+DELETE FROM `charities`;
+INSERT INTO `categories` (`id`, `api_id`, `description`, `created_at`, `updated_at`) VALUES (980190962, 'MyString', 'MyString', '2019-12-16 02:18:59.365184', '2019-12-16 02:18:59.365184');
+INSERT INTO `donations` (`id`, `amount`, `card_id`, `created_at`, `updated_at`, `person_id`, `charity_id`) VALUES (980190962, 1, 980190962, '2019-12-16 02:18:59.367540', '2019-12-16 02:18:59.367540', DEFAULT, 980190962), (298486374, 1, 298486374, '2019-12-16 02:18:59.367540', '2019-12-16 02:18:59.367540', DEFAULT, 298486374);
+INSERT INTO `people` (`id`, `name`, `email`, `created_at`, `updated_at`) VALUES (980190962, 'MyString', 'MyString', '2019-12-16 02:18:59.369122', '2019-12-16 02:18:59.369122'), (298486374, 'MyString', 'MyString', '2019-12-16 02:18:59.369122', '2019-12-16 02:18:59.369122');
+INSERT INTO `cards` (`id`, `occasion`, `blurb`, `message`, `created_at`, `updated_at`, `person_id`) VALUES (980190962, 1, 'MyString', 'MyString', '2019-12-16 02:18:59.370767', '2019-12-16 02:18:59.370767', DEFAULT), (298486374, 1, 'MyString', 'MyString', '2019-12-16 02:18:59.370767', '2019-12-16 02:18:59.370767', DEFAULT);
+INSERT INTO `charities` (`id`, `category_id`, `category_api_id`, `employer_id`, `name`, `url`, `city`, `state`, `created_at`, `updated_at`, `category_name`) VALUES (980190962, 980190962, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2019-12-16 02:18:59.372704', '2019-12-16 02:18:59.372704', DEFAULT), (298486374, 298486374, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2019-12-16 02:18:59.372704', '2019-12-16 02:18:59.372704', DEFAULT)[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+----------------------------------------------------------
+UpdateCardTestCase: test_update_card_mutation_is_sucessful
+----------------------------------------------------------
+  [1m[36mCard Load (0.3ms)[0m  [1m[34mSELECT `cards`.* FROM `cards` ORDER BY `cards`.`id` ASC LIMIT 1[0m
+  [1m[36mCard Load (0.7ms)[0m  [1m[34mSELECT `cards`.* FROM `cards` ORDER BY `cards`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
